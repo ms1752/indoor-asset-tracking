@@ -1,0 +1,16 @@
+{
+    "allow_certificate_auth": false,
+    "allow_key_auth": true,
+    "asset_type": "mobile_phone",
+    "certificate": "",
+    "description": "",
+    "enabled": true,
+    "last_location_update": "2018-03-08T22:16:05.811Z",
+    "map_name": "clearblade_office_floor_2",
+    "name": "Aaron-iPhone",
+    "state": "",
+    "type": "asset",
+    "x_pos": 90.5692138671875,
+    "y_pos": 1202.6971435546875,
+    "z_pos": 0
+}
