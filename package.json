@@ -1,0 +1,29 @@
+{
+    "author": {
+        "email": "msprague@clearblade.com"
+    },
+    "clouds": [],
+    "description": "A Generic Indoor Asset Tracking system for viewing asset locations on a ma using x and y positions.",
+    "domains": [],
+    "gateways": [],
+    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
+    "keywords": [
+        "clearblade",
+        "iot",
+        "platform",
+        "asset-management",
+        "asset-tracking",
+        "location-tracking",
+        "position",
+        "tracking",
+        "assets",
+        "xy-cordinates"
+    ],
+    "license": "MIT",
+    "name": "indoor-asset-tracking",
+    "private": false,
+    "prog_lang": [],
+    "protocols": [],
+    "things": [],
+    "version": ""
+}
