@@ -1,0 +1,10 @@
+{
+    "auth": true,
+    "deployments": [],
+    "description": "",
+    "messaging_url": "staging.clearblade.com:1883",
+    "name": "Indoor Asset Tracking",
+    "platform_url": "https://staging.clearblade.com",
+    "system_key": "8897a4a90bc2ec9aba92beebf045",
+    "system_secret": "8897A4A90BA0B9ACAEB3D9BD9D46"
+}
