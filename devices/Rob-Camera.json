@@ -1,0 +1,16 @@
+{
+    "allow_certificate_auth": true,
+    "allow_key_auth": true,
+    "asset_type": "digital_camera",
+    "certificate": "",
+    "description": "",
+    "enabled": true,
+    "last_location_update": "2018-03-08T22:16:05.811Z",
+    "map_name": "clearblade_office_floor_2",
+    "name": "Rob-Camera",
+    "state": "",
+    "type": "asset",
+    "x_pos": 1025.7734375,
+    "y_pos": 907.2034301757812,
+    "z_pos": 0
+}
