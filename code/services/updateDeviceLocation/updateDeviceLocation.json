@@ -1,0 +1,10 @@
+{
+    "current_version": 10,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "true",
+    "name": "updateDeviceLocation",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "updateDeviceLocation.js"
+}
