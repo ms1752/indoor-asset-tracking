@@ -25,6 +25,6 @@
     "prog_lang": [],
     "protocols": [],
     "things": [],
-    "version": "",
+    "version": "1.0.0",
     "asset_types": ["Code Libraries", "Code Services", "Portals", "Collections", "Triggers", "Roles", "Timers", "Users", "Devices"]
 }
