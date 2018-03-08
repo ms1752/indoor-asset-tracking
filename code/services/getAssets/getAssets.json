@@ -1,0 +1,16 @@
+{
+    "current_version": 20,
+    "dependencies": "clearblade,log,getSystemConfiguration",
+    "logging_enabled": "false",
+    "name": "getAssets",
+    "params": [
+        "asset_type"
+    ],
+    "permissions": {
+        "Administrator": 1,
+        "Asset Administrator": 1,
+        "Asset Viewer": 1
+    },
+    "run_user": "",
+    "source": "getAssets.js"
+}
