@@ -1,0 +1,34 @@
+{
+    "columns": [
+        {
+            "ColumnName": "asset_type",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "x_pos",
+            "ColumnType": "float",
+            "PK": false
+        },
+        {
+            "ColumnName": "y_pos",
+            "ColumnType": "float",
+            "PK": false
+        },
+        {
+            "ColumnName": "z_pos",
+            "ColumnType": "float",
+            "PK": false
+        },
+        {
+            "ColumnName": "last_location_update",
+            "ColumnType": "timestamp",
+            "PK": false
+        },
+        {
+            "ColumnName": "map_name",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
