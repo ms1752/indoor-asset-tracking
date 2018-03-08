@@ -1,0 +1,28 @@
+{
+    "app_id": "8897a4a90bc2ec9aba92beebf045",
+    "collection_id": "e897a4a90b90d194c98597fef0e801",
+    "items": [
+        {
+            "config_name": "inactivity_time_in_minutes",
+            "config_value": "10"
+        }
+    ],
+    "name": "system_configuration",
+    "permissions": {
+        "Administrator": 1,
+        "Asset Administrator": 1,
+        "Asset Viewer": 1
+    },
+    "schema": [
+        {
+            "ColumnName": "config_name",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "config_value",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
