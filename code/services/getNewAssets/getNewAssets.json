@@ -1,0 +1,13 @@
+{
+    "current_version": 47,
+    "dependencies": "clearblade,log,getSystemConfiguration",
+    "logging_enabled": "false",
+    "name": "getNewAssets",
+    "params": [],
+    "permissions": {
+        "Administrator": 1,
+        "Asset Administrator": 1
+    },
+    "run_user": "",
+    "source": "getNewAssets.js"
+}
