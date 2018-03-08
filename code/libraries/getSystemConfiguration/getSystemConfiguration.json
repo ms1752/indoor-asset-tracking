@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "clearblade,log",
+    "description": "",
+    "name": "getSystemConfiguration",
+    "version": 11,
+    "visibility": "system"
+}
