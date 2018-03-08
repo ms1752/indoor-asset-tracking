@@ -1,0 +1,8 @@
+{
+    "description": "Create demo data for all current devices",
+    "frequency": 10,
+    "name": "DemoDataCreation",
+    "repeats": -1,
+    "service_name": "createDemoData",
+    "start_time": "2018-03-06T04:37:44Z"
+}
