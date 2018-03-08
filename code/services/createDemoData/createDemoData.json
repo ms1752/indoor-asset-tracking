@@ -1,0 +1,10 @@
+{
+    "current_version": 14,
+    "dependencies": "clearblade,log",
+    "logging_enabled": "true",
+    "name": "createDemoData",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "createDemoData.js"
+}
