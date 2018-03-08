@@ -1,0 +1,1468 @@
+{
+    "config": {
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1": "lg",
+            "255d78c5-5b7f-4b28-8f98-28441637dbdc": "lg",
+            "46b7bad7-677c-4e90-b780-b5df3949bbd2": "lg",
+            "4ed85735-7045-40cf-926f-0ceee76f977b": "lg",
+            "9065b98b-04e9-41d3-81cc-df35fc7e9d54": "lg",
+            "9b5a0ebf-ce31-414e-a031-ed9beecab6bc": "lg",
+            "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec": "lg",
+            "aef971a8-7422-4ba9-b773-b3a8985f092c": "lg",
+            "b1aa02f3-d42e-4d1e-90c2-e250a6ece568": "lg",
+            "dca4fe4d-4d4b-47f1-8021-586a021ccbf4": "lg",
+            "dd17abfd-af9a-4417-b111-f2bddc3f2695": "lg",
+            "eea8c960-8de7-4356-ac3d-9785062651c9": "lg"
+        },
+        "datasources": {
+            "0803117e-bde7-4c3d-9f5e-b5b8e756f590": {
+                "id": "0803117e-bde7-4c3d-9f5e-b5b8e756f590",
+                "name": "selectedAsset",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "0b70c0b7-7002-4013-b1e7-2fd6c84b9177": {
+                "id": "0b70c0b7-7002-4013-b1e7-2fd6c84b9177",
+                "name": "maps",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "map_display_config",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            },
+            "9c1f9d50-b86b-425f-849b-fa351fd33e06": {
+                "id": "9c1f9d50-b86b-425f-849b-fa351fd33e06",
+                "name": "selectedMap",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "ba1cda00-509e-43a0-9674-5b10b38db18e": {
+                "id": "ba1cda00-509e-43a0-9674-5b10b38db18e",
+                "name": "selectedNewAsset",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "ba763bfc-4cb2-4461-8495-2b506e1cb851": {
+                "id": "ba763bfc-4cb2-4461-8495-2b506e1cb851",
+                "name": "assetTypes",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "asset_types",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            },
+            "e918ceee-ca55-4a9b-a816-f51e5a7a70ac": {
+                "id": "e918ceee-ca55-4a9b-a816-f51e5a7a70ac",
+                "name": "getAssets",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "getAssets",
+                    "payload": "{}",
+                    "refresh_interval": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "e96188a7-7486-48b4-a8dc-82e9ef5aea1f": {
+                "id": "e96188a7-7486-48b4-a8dc-82e9ef5aea1f",
+                "name": "selectedAssetType",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "f3831974-4131-484a-b1b5-900dcbdc3fd7": {
+                "id": "f3831974-4131-484a-b1b5-900dcbdc3fd7",
+                "name": "getNewAssets",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "getNewAssets",
+                    "payload": "{}",
+                    "refresh_interval": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            }
+        },
+        "externalScripts": [],
+        "flyoutWidgetLayout": {
+            "lg": [],
+            "md": [],
+            "sm": [],
+            "xs": [],
+            "xxs": []
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 46,
+                    "x": 185,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "71089698-3a10-4b30-9f80-124b354b7f29": {
+                "children": [],
+                "href": "",
+                "id": "71089698-3a10-4b30-9f80-124b354b7f29",
+                "isChild": false,
+                "name": "Add New Map",
+                "path": ""
+            },
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            },
+            "d88e0f14-ffa8-42d1-b331-677de496d9a3": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "d88e0f14-ffa8-42d1-b331-677de496d9a3",
+                "isChild": false,
+                "isParam": false,
+                "name": "Add New Asset Type",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "9c71577d-58d3-4121-bb8b-2796323babe8",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "255d78c5-5b7f-4b28-8f98-28441637dbdc": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "0e953abb-4800-44e3-a056-4e3870106fb6",
+                        "minH": 3,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "46b7bad7-677c-4e90-b780-b5df3949bbd2": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "8f907c98-d490-4ff8-af6a-2135920e748e",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "4ed85735-7045-40cf-926f-0ceee76f977b": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "43ad38f3-7223-4798-a853-1f28712293d0",
+                        "minH": 3,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "9065b98b-04e9-41d3-81cc-df35fc7e9d54": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "5378b2f6-e071-46a3-a3bc-a86c1ede09df",
+                        "minH": 3,
+                        "w": 5,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "9b5a0ebf-ce31-414e-a031-ed9beecab6bc": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "10a786d9-45c0-41a3-9c8b-1a0e7b36262a",
+                        "minH": 3,
+                        "moved": false,
+                        "static": false,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "c3f0280f-37be-42a4-9386-6e0e01451dbc",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "aef971a8-7422-4ba9-b773-b3a8985f092c": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "0a84638c-f06d-49ce-b507-68851f1a4704",
+                        "minH": 3,
+                        "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "b1aa02f3-d42e-4d1e-90c2-e250a6ece568": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "ce444d5f-263a-459b-9c4c-f4ffeb984b63",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dca4fe4d-4d4b-47f1-8021-586a021ccbf4": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "380c9f33-595f-41a7-98af-f535fe37b6cc",
+                        "minH": 3,
+                        "w": 8,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dd17abfd-af9a-4417-b111-f2bddc3f2695": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "a71930bd-c7a2-4b71-a9c5-0bb657b075db",
+                        "minH": 3,
+                        "w": 5,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "eea8c960-8de7-4356-ac3d-9785062651c9": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "4824d6cb-8176-4fe8-b216-1a0ac5a833f1",
+                        "minH": 3,
+                        "w": 13,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "paneLayouts": {
+            "71089698-3a10-4b30-9f80-124b354b7f29": {
+                "lg": [
+                    {
+                        "h": 2,
+                        "i": "644d9033-3092-414f-8833-780079981bbc",
+                        "moved": false,
+                        "static": false,
+                        "w": 7,
+                        "x": 3,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "Home": {
+                "lg": [
+                    {
+                        "h": 3,
+                        "i": "a859f19c-3391-4b2d-beeb-c12bf09490c1",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 3,
+                        "i": "aa058c1e-4282-47eb-ae07-7e5f0772b9c6",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 6,
+                        "y": 0
+                    },
+                    {
+                        "h": 3,
+                        "i": "941564e7-23a2-4017-b1c8-43671b8c8d5f",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 3
+                    },
+                    {
+                        "h": 3,
+                        "i": "7bdf7353-174a-47ab-9982-9cf46c294b7c",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 8,
+                        "y": 3
+                    },
+                    {
+                        "h": 3,
+                        "i": "be3c4357-76b8-464b-bc72-f5333f53a8b1",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 2,
+                        "y": 0
+                    },
+                    {
+                        "h": 3,
+                        "i": "26095028-65ca-41e8-895b-f8f4385addee",
+                        "moved": false,
+                        "static": false,
+                        "w": 4,
+                        "x": 8,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "66a0499f-e19e-4e13-ab88-2fc1f4108d57",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 3
+                    },
+                    {
+                        "h": 2,
+                        "i": "7aea1f90-1cff-4bdb-ae7e-5847ada4e3d7",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 6,
+                        "y": 3
+                    },
+                    {
+                        "h": 1,
+                        "i": "48e718a5-eaeb-4467-ac8c-288d3bec6bad",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 0,
+                        "y": 5
+                    },
+                    {
+                        "h": 1,
+                        "i": "2327eeaa-b7ac-4c54-b815-c12efd4b27bb",
+                        "moved": false,
+                        "static": false,
+                        "w": 2,
+                        "x": 6,
+                        "y": 5
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "bfba70f8-f818-46d9-a2fa-5b18142c5e3b": {
+                "lg": [],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "d88e0f14-ffa8-42d1-b331-677de496d9a3": {
+                "lg": [
+                    {
+                        "h": 2,
+                        "i": "d2b108a5-377a-4786-b72e-848860e8f1e2",
+                        "moved": false,
+                        "static": false,
+                        "w": 7,
+                        "x": 3,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "panes": {
+            "2327eeaa-b7ac-4c54-b815-c12efd4b27bb": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "2327eeaa-b7ac-4c54-b815-c12efd4b27bb",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "4ed85735-7045-40cf-926f-0ceee76f977b",
+                    "tabIds": [
+                        "4ed85735-7045-40cf-926f-0ceee76f977b"
+                    ],
+                    "tabTitles": {
+                        "4ed85735-7045-40cf-926f-0ceee76f977b": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "26095028-65ca-41e8-895b-f8f4385addee": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "26095028-65ca-41e8-895b-f8f4385addee",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "9065b98b-04e9-41d3-81cc-df35fc7e9d54",
+                    "tabIds": [
+                        "9065b98b-04e9-41d3-81cc-df35fc7e9d54"
+                    ],
+                    "tabTitles": {
+                        "9065b98b-04e9-41d3-81cc-df35fc7e9d54": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "48e718a5-eaeb-4467-ac8c-288d3bec6bad": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "48e718a5-eaeb-4467-ac8c-288d3bec6bad",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "aef971a8-7422-4ba9-b773-b3a8985f092c",
+                    "tabIds": [
+                        "aef971a8-7422-4ba9-b773-b3a8985f092c"
+                    ],
+                    "tabTitles": {
+                        "aef971a8-7422-4ba9-b773-b3a8985f092c": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "644d9033-3092-414f-8833-780079981bbc": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "644d9033-3092-414f-8833-780079981bbc",
+                "pageId": "71089698-3a10-4b30-9f80-124b354b7f29",
+                "tabInfo": {
+                    "activeTab": "eea8c960-8de7-4356-ac3d-9785062651c9",
+                    "tabIds": [
+                        "eea8c960-8de7-4356-ac3d-9785062651c9"
+                    ],
+                    "tabTitles": {
+                        "eea8c960-8de7-4356-ac3d-9785062651c9": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "66a0499f-e19e-4e13-ab88-2fc1f4108d57": {
+                "customPaneId": "mapsList",
+                "header": {
+                    "hide": true,
+                    "title": "Maps"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "66a0499f-e19e-4e13-ab88-2fc1f4108d57",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "9b5a0ebf-ce31-414e-a031-ed9beecab6bc",
+                    "tabIds": [
+                        "9b5a0ebf-ce31-414e-a031-ed9beecab6bc"
+                    ],
+                    "tabTitles": {
+                        "9b5a0ebf-ce31-414e-a031-ed9beecab6bc": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "7aea1f90-1cff-4bdb-ae7e-5847ada4e3d7": {
+                "customPaneId": "assetTypesList",
+                "header": {
+                    "hide": true,
+                    "title": "Asset Types"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "7aea1f90-1cff-4bdb-ae7e-5847ada4e3d7",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "255d78c5-5b7f-4b28-8f98-28441637dbdc",
+                    "tabIds": [
+                        "255d78c5-5b7f-4b28-8f98-28441637dbdc"
+                    ],
+                    "tabTitles": {
+                        "255d78c5-5b7f-4b28-8f98-28441637dbdc": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "7bdf7353-174a-47ab-9982-9cf46c294b7c": {
+                "customPaneId": "assetTypeConfig",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "7bdf7353-174a-47ab-9982-9cf46c294b7c",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "b1aa02f3-d42e-4d1e-90c2-e250a6ece568",
+                    "tabIds": [
+                        "b1aa02f3-d42e-4d1e-90c2-e250a6ece568"
+                    ],
+                    "tabTitles": {
+                        "b1aa02f3-d42e-4d1e-90c2-e250a6ece568": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "941564e7-23a2-4017-b1c8-43671b8c8d5f": {
+                "customPaneId": "mapConfig",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "941564e7-23a2-4017-b1c8-43671b8c8d5f",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1",
+                    "tabIds": [
+                        "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1"
+                    ],
+                    "tabTitles": {
+                        "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "a859f19c-3391-4b2d-beeb-c12bf09490c1": {
+                "customPaneId": "assetOnboardingList",
+                "header": {
+                    "hide": true,
+                    "title": "New Assets"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "a859f19c-3391-4b2d-beeb-c12bf09490c1",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "46b7bad7-677c-4e90-b780-b5df3949bbd2",
+                    "tabIds": [
+                        "46b7bad7-677c-4e90-b780-b5df3949bbd2"
+                    ],
+                    "tabTitles": {
+                        "46b7bad7-677c-4e90-b780-b5df3949bbd2": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "aa058c1e-4282-47eb-ae07-7e5f0772b9c6": {
+                "customPaneId": "assetManagement",
+                "header": {
+                    "hide": true,
+                    "title": "Asset Management"
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "aa058c1e-4282-47eb-ae07-7e5f0772b9c6",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec",
+                    "tabIds": [
+                        "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec"
+                    ],
+                    "tabTitles": {
+                        "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "be3c4357-76b8-464b-bc72-f5333f53a8b1": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "be3c4357-76b8-464b-bc72-f5333f53a8b1",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "dd17abfd-af9a-4417-b111-f2bddc3f2695",
+                    "tabIds": [
+                        "dd17abfd-af9a-4417-b111-f2bddc3f2695"
+                    ],
+                    "tabTitles": {
+                        "dd17abfd-af9a-4417-b111-f2bddc3f2695": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "d2b108a5-377a-4786-b72e-848860e8f1e2": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "d2b108a5-377a-4786-b72e-848860e8f1e2",
+                "pageId": "d88e0f14-ffa8-42d1-b331-677de496d9a3",
+                "tabInfo": {
+                    "activeTab": "dca4fe4d-4d4b-47f1-8021-586a021ccbf4",
+                    "tabIds": [
+                        "dca4fe4d-4d4b-47f1-8021-586a021ccbf4"
+                    ],
+                    "tabTitles": {
+                        "dca4fe4d-4d4b-47f1-8021-586a021ccbf4": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5"
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#6e8592"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#9db5c2",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#9db5c2"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#6e8592",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "FILTERABLE_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "GROUPING_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#6e8592"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#6e8592"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#425864",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#6e8592",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#9db5c2",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "0a84638c-f06d-49ce-b507-68851f1a4704": {
+                "externalScripts": [],
+                "id": "0a84638c-f06d-49ce-b507-68851f1a4704",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".add-new-map-btn {\n  width: 60%;\n}",
+                            "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003cbutton id=\"addNewMapButton\" class=\"btn btn-primary add-new-map-btn\"\u003eAdd New Map\u003c/button\u003e\n\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\ndocument.getElementById(\"addNewMapButton\").onclick = function (evt) {\n    CB_PORTAL.selectPage(\"/Add New Map\");\n}"
+                        }
+                    }
+                },
+                "tab": "aef971a8-7422-4ba9-b773-b3a8985f092c",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "0e953abb-4800-44e3-a056-4e3870106fb6": {
+                "externalScripts": [],
+                "id": "0e953abb-4800-44e3-a056-4e3870106fb6",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": false,
+                    "allowSearch": true,
+                    "displayAttribute": "display_name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "e96188a7-7486-48b4-a8dc-82e9ef5aea1f",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "ba763bfc-4cb2-4461-8495-2b506e1cb851",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "var fmtData = [];\nvar len = this.datasource.length;\nfor(var i = 0; i \u003c len; i++){\n  fmtData.push(this.datasource[i].data);\n}\nreturn fmtData;"
+                        }
+                    },
+                    "statusAttribute": "display_name",
+                    "titleColor": "#000000"
+                },
+                "tab": "255d78c5-5b7f-4b28-8f98-28441637dbdc",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "10a786d9-45c0-41a3-9c8b-1a0e7b36262a": {
+                "externalScripts": [],
+                "id": "10a786d9-45c0-41a3-9c8b-1a0e7b36262a",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": false,
+                    "allowSearch": true,
+                    "defaultListItem": "",
+                    "displayAttribute": "map_display_name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "9c1f9d50-b86b-425f-849b-fa351fd33e06",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "0b70c0b7-7002-4013-b1e7-2fd6c84b9177",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "var fmtData = [];\nvar len = this.datasource.length;\nfor(var i = 0; i \u003c len; i++){\n  fmtData.push(this.datasource[i].data);\n}\nreturn fmtData;"
+                        }
+                    },
+                    "statusAttribute": "map_display_name",
+                    "titleColor": "#000000"
+                },
+                "tab": "9b5a0ebf-ce31-414e-a031-ed9beecab6bc",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "380c9f33-595f-41a7-98af-f535fe37b6cc": {
+                "externalScripts": [],
+                "id": "380c9f33-595f-41a7-98af-f535fe37b6cc",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".asset-type-label {\n    text-align: right;\n}\n\n.asset-type-value {\n    text-align: left;\n}\n\n.hidden {\n    display: none;\n}\n\n.btn {\n    margin-bottom: 10px;\n}\n\n.map-image {\n    width: 20%;\n    height: 20%;\n}\n\n.validation-error {\n    color: red;\n}",
+                            "HTML": "\u003cdiv id=\"newAssetTypeForm\" class=\"container-fluid text-center\"\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 asset-type-label\"\u003eSelect an Asset Type Image:\u003c/div\u003e\n    \u003cinput type=\"file\" id=\"newAssetTypeImage\" class=\"col-md-6 asset-type-value\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 asset-type-label\"\u003eAsset Type Name:\u003c/div\u003e\n    \u003cinput type=\"text\" id=\"newAssetTypeName\" class=\"col-md-6 asset-type-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 asset-type-label\"\u003eAsset Type Display Name:\u003c/div\u003e\n    \u003cinput type=\"text\" id=\"newAssetTypeDisplayName\" class=\"col-md-6 asset-type-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cbutton id=\"createAssetTypeConfigButton\" class=\"btn btn-primary\"\u003eCreate Asset Type Configuration\u003c/button\u003e\n  \u003cdiv id=\"assetTypeValidationError\" class=\"validation-error\"\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"assetTypeCreatedSuccess\" class=\"container-fluid text-center hidden\"\u003e\n  \u003cdiv\u003eMap Configuration Successfully Created!\u003c/div\u003e\n  \u003cbutton id=\"assetTypeReturnToPortalButton\" class=\"btn btn-primary\"\u003eReturn to Asset Administration\u003c/button\u003e\n\u003c/div\u003e\n\u003cdiv id=\"assetTypeCreatedFailed\" class=\"container-fluid text-center\"\u003e\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\ndocument.getElementById(\"createAssetTypeConfigButton\").onclick = function (evt) {\n    var newAssetTypeName = document.getElementById(\"newAssetTypeName\").value;\n    var assetTypeFile = document.getElementById(\"newAssetTypeImage\").files;\n    var assetTypeDisplayName = document.getElementById(\"newAssetTypeDisplayName\").value;\n    if (newAssetTypeName === \"\") {\n        document.getElementById(\"assetTypeValidationError\").innerText = \"A value for Asset Type Name is required.\";\n        return;\n    } else if (assetTypeDisplayName === \"\") {\n        document.getElementById(\"assetTypeValidationError\").innerText = \"A value for Asset Type Display Name is required.\";\n        return;\n    } else if (assetTypeFile.length === 0) {\n        document.getElementById(\"assetTypeValidationError\").innerText = \"A file for Asset Type Image is required.\";\n        return;\n    } else {\n        document.getElementById(\"assetTypeValidationError\").innerText = \"\";\n    }\n    var assetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n    for (var x = 0; x \u003c assetTypes.length; x++) {\n        if (newAssetTypeName === assetTypes[x].data.name) {\n            document.getElementById(\"validationError\").innerText = \"An Asset Type Configuration With this Name already exists, please pick a different value.\";\n            return;\n        }\n    }\n    var reader = new FileReader();\n    reader.readAsDataURL(assetTypeFile[0]);\n    reader.onload = function () {\n        var newAssetTypeObj = {\n            method: \"INSERT\",\n            data: {\n                name: newAssetTypeName,\n                display_name: assetTypeDisplayName,\n                display_icon: reader.result\n            }\n        };\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.sendData(newAssetTypeObj).then(function(){\n            CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.refresh();\n            document.getElementById(\"assetTypeCreatedSuccess\").className = \"container-fluid text-center\";\n            document.getElementById(\"newAssetTypeForm\").className = \"hidden\";\n        }, function(err) {\n            document.getElementById(\"assetTypeValidationError\").innerText = JSON.parse(err).error.message;\n        });\n    }\n    /*\n    \n   \n        var newMapObj = {\n            method: \"INSERT\",\n            data: {\n                map_name: newMapName,\n                map_display_name: mapDisplayName,\n                map_width: mapWidth,\n                map_height: mapHeight,\n                map_image: reader.result\n            }\n        };\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.sendData(newMapObj).then(function(){\n            CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.refresh();\n            document.getElementById(\"mapCreatedSuccess\").className = \"container-fluid text-center\";\n            document.getElementById(\"newMapForm\").className = \"hidden\";\n        }, function(err) {\n            document.getElementById(\"validationError\").innerText = JSON.parse(err).error.message;\n        });\n    }\n    */\n}\n\ndocument.getElementById(\"assetTypeReturnToPortalButton\").onclick = function (evt) {\n    CB_PORTAL.selectPage(\"/Home\");\n}"
+                        }
+                    }
+                },
+                "tab": "dca4fe4d-4d4b-47f1-8021-586a021ccbf4",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "43ad38f3-7223-4798-a853-1f28712293d0": {
+                "externalScripts": [],
+                "id": "43ad38f3-7223-4798-a853-1f28712293d0",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".add-new-asset-type-btn {\n  width: 60%;\n}",
+                            "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003cbutton id=\"addNewAssetTypeButton\" class=\"btn btn-primary add-new-asset-type-btn\"\u003eAdd New Asset Type\u003c/button\u003e\n\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\ndocument.getElementById(\"addNewAssetTypeButton\").onclick = function (evt) {\n    CB_PORTAL.selectPage(\"/Add New Asset Type\");\n}"
+                        }
+                    }
+                },
+                "tab": "4ed85735-7045-40cf-926f-0ceee76f977b",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "4824d6cb-8176-4fe8-b216-1a0ac5a833f1": {
+                "externalScripts": [],
+                "id": "4824d6cb-8176-4fe8-b216-1a0ac5a833f1",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".map-label {\n    text-align: right;\n}\n\n.map-value {\n    text-align: left;\n}\n\n.hidden {\n    display: none;\n}\n\n.btn {\n    margin-bottom: 10px;\n}\n\n.map-image {\n    width: 20%;\n    height: 20%;\n}\n\n.validation-error {\n    color: red;\n}",
+                            "HTML": "\u003cdiv id=\"newMapForm\" class=\"container-fluid text-center\"\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 map-label\"\u003eSelect a Map Image:\u003c/div\u003e\n    \u003cinput type=\"file\" id=\"newMapImage\" class=\"col-md-6 map-value\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 map-label\"\u003eMap Name:\u003c/div\u003e\n    \u003cinput type=\"text\" id=\"newMapName\" class=\"col-md-6 map-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 map-label\"\u003eMap Display Name:\u003c/div\u003e\n    \u003cinput type=\"text\" id=\"newMapDisplayName\" class=\"col-md-6 map-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 map-label\"\u003eMap Width:\u003c/div\u003e\n    \u003cinput type=\"number\" id=\"newMapWidth\" class=\"col-md-6 map-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 map-label\"\u003eMap Height:\u003c/div\u003e\n    \u003cinput type=\"number\" id=\"newMapHeight\" class=\"col-md-6 map-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cbutton id=\"createMapConfigButton\" class=\"btn btn-primary\"\u003eCreate Map Configuration\u003c/button\u003e\n  \u003cdiv id=\"validationError\" class=\"validation-error\"\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"mapCreatedSuccess\" class=\"container-fluid text-center hidden\"\u003e\n  \u003cdiv\u003eMap Configuration Successfully Created!\u003c/div\u003e\n  \u003cbutton id=\"returnToPortalButton\" class=\"btn btn-primary\"\u003eReturn to Asset Administration\u003c/button\u003e\n\u003c/div\u003e\n\u003cdiv id=\"mapCreatedFailed\" class=\"container-fluid text-center\"\u003e\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\ndocument.getElementById(\"createMapConfigButton\").onclick = function (evt) {\n    var newMapName = document.getElementById(\"newMapName\").value;\n    var mapFile = document.getElementById(\"newMapImage\").files;\n    var mapDisplayName = document.getElementById(\"newMapDisplayName\").value;\n    var mapWidth = document.getElementById(\"newMapWidth\").value;\n    var mapHeight = document.getElementById(\"newMapHeight\").value;\n    if (newMapName === \"\") {\n        document.getElementById(\"validationError\").innerText = \"A value for Map Name is required.\";\n        return;\n    } else if (mapDisplayName === \"\") {\n        document.getElementById(\"validationError\").innerText = \"A value for Map Display Name is required.\";\n        return;\n    } else if (mapWidth === \"\") {\n        document.getElementById(\"validationError\").innerText = \"A value for Map Width is required.\";\n        return;\n    } else if (mapHeight === \"\") {\n        document.getElementById(\"validationError\").innerText = \"A value for Map Height is required.\";\n        return;\n    } else if (mapFile.length === 0) {\n        document.getElementById(\"validationError\").innerText = \"A file for Map Image is required.\";\n        return;\n    } else {\n        document.getElementById(\"validationError\").innerText = \"\";\n    }\n    var maps = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.latestData();\n    for (var x = 0; x \u003c maps.length; x++) {\n        if (newMapName === maps[x].data.map_name) {\n            document.getElementById(\"validationError\").innerText = \"A Map Configuration With this Name already exists, please pick a different value.\";\n            return;\n        }\n    }\n    //get base64 string of image\n    var reader = new FileReader();\n    reader.readAsDataURL(mapFile[0]);\n    reader.onload = function () {\n        var newMapObj = {\n            method: \"INSERT\",\n            data: {\n                map_name: newMapName,\n                map_display_name: mapDisplayName,\n                map_width: mapWidth,\n                map_height: mapHeight,\n                map_image: reader.result\n            }\n        };\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.sendData(newMapObj).then(function(){\n            CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.refresh();\n            document.getElementById(\"mapCreatedSuccess\").className = \"container-fluid text-center\";\n            document.getElementById(\"newMapForm\").className = \"hidden\";\n        }, function(err) {\n            document.getElementById(\"validationError\").innerText = JSON.parse(err).error.message;\n        });\n    }\n}\n\ndocument.getElementById(\"returnToPortalButton\").onclick = function (evt) {\n    CB_PORTAL.selectPage(\"/Home\");\n}"
+                        }
+                    }
+                },
+                "tab": "eea8c960-8de7-4356-ac3d-9785062651c9",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "5378b2f6-e071-46a3-a3bc-a86c1ede09df": {
+                "externalScripts": [],
+                "id": "5378b2f6-e071-46a3-a3bc-a86c1ede09df",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "0803117e-bde7-4c3d-9f5e-b5b8e756f590",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".underline {\n  text-decoration: underline;\n}\n",
+                                "HTML": "\u003cdiv class=\"container-fluid text-center\"\u003e\n  \u003cdiv id=\"assetUpdatedSuccess\"\u003e\n    Asset Successfully Updated!\n  \u003c/div\u003e\n  \u003cdiv id=\"assetDeleteSuccess\"\u003e\n    Asset Successfully Deleted!\n  \u003c/div\u003e\n  \u003cdiv id=\"selectAnAssetMessage\"\u003e\n    Please select an Asset from the List on the left.\n  \u003c/div\u003e\n  \u003cdiv id=\"assetDetails\"\u003e\n    \u003c!-- dynamically generated via JS --\u003e  \n  \u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource) {\n  var assetDetails = document.getElementById(\"assetDetails\");\n  assetDetails.innerHTML = \"\";\n  var nameTitle = document.createElement(\"h2\");\n  nameTitle.innerText = this.datasource.name;\n  assetDetails.append(nameTitle);\n  for (var key in this.datasource) {\n    if (this.datasource.hasOwnProperty(key) \u0026\u0026 key !== \"name\" \u0026\u0026 key !== \"asset_type\" \u0026\u0026 key !== \"map_name\") {\n      var newRow = document.createElement(\"div\");\n      newRow.className = \"row\";\n      var label = document.createElement(\"div\");\n      label.className = \"col-md-6 asset-label\";\n      label.innerText = key + \":\";\n      newRow.append(label);\n      var value = document.createElement(\"div\");\n      value.className = \"col-md-6 asset-value\";\n      if (key === \"created_date\" || key === \"last_active_date\" || key === \"last_location_update\") {\n        var timestamp;\n        if (typeof this.datasource[key] === \"string\") {\n          timestamp = new Date(this.datasource[key]).toLocaleString();\n        } else if (this.datasource[key] !== null) {\n          timestamp = new Date(this.datasource[key]*1000).toLocaleString();\n        } else {\n          timestamp = \"N/A\";\n        }\n        value.innerText = timestamp;\n      } else {\n        value.innerText = this.datasource[key];\n      }\n      newRow.append(value);\n      assetDetails.append(newRow);\n    }\n  }\n  var assetTypes = datasources[\"assetTypes\"].latestData();\n  var assetTypeSelect = window.buildSelect(assetTypes, \"name\", \"display_name\", \"Asset Type\", \"assetTypeSelect\");\n  assetDetails.append(assetTypeSelect);\n  for (var x = 0; x \u003c assetTypes.length; x++) {\n    if (assetTypes[x].data.name === this.datasource.asset_type) {\n      document.getElementById(\"assetTypeSelect\").selectedIndex = x;\n      break;\n    }\n  }\n  var maps = datasources[\"maps\"].latestData();\n  var mapSelect = window.buildSelect(maps, \"map_name\", \"map_display_name\", \"Map\", \"mapSelect\");\n  assetDetails.append(mapSelect);\n  for (var x = 0; x \u003c maps.length; x++) {\n    if (maps[x].data.name === this.datasource.map_name) {\n      document.getElementById(\"mapSelect\").selectedIndex = x;\n      break;\n    }\n  }\n  assetDetails.append(document.createElement(\"br\"));\n  var updateAssetButton = document.createElement(\"button\");\n  updateAssetButton.innerText = \"Update Asset\";\n  updateAssetButton.className = \"btn btn-primary\";\n  updateAssetButton.onclick = function(event) {\n    var deviceName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.latestData().name;\n    var assetType = document.getElementById(\"assetTypeSelect\").value;\n    var mapName = document.getElementById(\"mapSelect\").value;\n    CB_PORTAL.ClearBlade.Device().updateDeviceByName(deviceName, {\"asset_type\":assetType, \"map_name\": mapName}, false, function (err, data) {\n      if (err) {\n        data = JSON.parse(data);\n        var assetDetails = document.getElementById(\"assetDetails\");\n        var errorMessage = document.createElement(\"div\");\n        errorMessage.innerText = \"Failed to Update Device: \" + data.error.detail;\n        assetDetails.append(errorMessage);\n      } else {\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.refresh();\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData({});\n        document.getElementById(\"assetUpdatedSuccess\").className = \"\";\n        document.getElementById(\"selectAnAssetMessage\").className = \"\";\n        document.getElementById(\"assetDetails\").className = \"hidden\";\n      }\n    });\n  };\n  assetDetails.append(updateAssetButton);\n  assetDetails.append(document.createElement(\"br\"));\n  assetDetails.append(document.createElement(\"br\"));\n  var deleteAssetButton = document.createElement(\"button\");\n  deleteAssetButton.innerText = \"Delete Asset\";\n  deleteAssetButton.className = \"btn btn-danger\";\n  deleteAssetButton.onclick = function(event) {\n    var assetName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.latestData().name;\n    if (window.confirm(\"Are you sure you want to delete the asset '\" + assetName + \"'?\")) {\n      CB_PORTAL.ClearBlade.Device().deleteDeviceByName(assetName, function (err, data) {\n        if (err) {\n          data = JSON.parse(data);\n          var assetDetails = document.getElementById(\"assetDetails\");\n          var errorMessage = document.createElement(\"div\");\n          errorMessage.innerText = \"Failed to delete Asset: \" + data.error.detail;\n          assetDetails.append(errorMessage);\n        } else {\n          CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.refresh();\n          CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData({});\n          document.getElementById(\"assetDeleteSuccess\").className = \"\";\n          document.getElementById(\"selectAnAssetMessage\").className = \"\";\n          document.getElementById(\"assetDetails\").className = \"hidden\";\n        }\n      });\n    }\n  };\n  assetDetails.append(deleteAssetButton);\n  document.getElementById(\"selectAnAssetMessage\").className = \"hidden\";\n  document.getElementById(\"assetUpdatedSuccess\").className = \"hidden\";\n  document.getElementById(\"assetDeleteSuccess\").className = \"hidden\";\n  document.getElementById(\"assetDetails\").className = \"\";\n} else {\n  document.getElementById(\"assetUpdatedSuccess\").className = \"hidden\";\n  document.getElementById(\"assetDeleteSuccess\").className = \"hidden\";\n  document.getElementById(\"selectAnAssetMessage\").className = \"\";\n  document.getElementById(\"assetDetails\").className = \"hidden\";\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "9065b98b-04e9-41d3-81cc-df35fc7e9d54",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "8f907c98-d490-4ff8-af6a-2135920e748e": {
+                "externalScripts": [],
+                "id": "8f907c98-d490-4ff8-af6a-2135920e748e",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": false,
+                    "allowSearch": true,
+                    "displayAttribute": "name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "ba1cda00-509e-43a0-9674-5b10b38db18e",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "f3831974-4131-484a-b1b5-900dcbdc3fd7",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource.success) {\n    return this.datasource.results;\n} else {\n    return [];\n}\n"
+                        }
+                    },
+                    "listTitle": "",
+                    "statusAttribute": "is_active",
+                    "titleColor": "#000000"
+                },
+                "tab": "46b7bad7-677c-4e90-b780-b5df3949bbd2",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "9c71577d-58d3-4121-bb8b-2796323babe8": {
+                "externalScripts": [],
+                "id": "9c71577d-58d3-4121-bb8b-2796323babe8",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "9c1f9d50-b86b-425f-849b-fa351fd33e06",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".map-label {\n    text-align: right;\n}\n\n.map-value {\n    text-align: left;\n}\n\n.hidden {\n    display: none;\n}\n\n.btn {\n    margin-bottom: 10px;\n}\n\n.map-image {\n    width: 20%;\n    height: 20%;\n}",
+                                "HTML": "\u003cdiv class=\"container-fluid text-center\"\u003e\n  \u003cdiv id=\"mapUpdatedSuccessfully\"\u003e\n    Map Successfully Updated!\n  \u003c/div\u003e\n  \u003cdiv id=\"mapDeletedSuccessfully\"\u003e\n    Map Successfully Deleted!\n  \u003c/div\u003e\n  \u003cdiv id=\"selectAMapMessage\"\u003e\n    Please select a Map from the List on the left.\n  \u003c/div\u003e\n  \u003cdiv id=\"mapDetails\"\u003e\n    \u003c!-- dynamically generated via JS --\u003e  \n  \u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource) {\n    var mapDetails = document.getElementById(\"mapDetails\");\n    mapDetails.innerHTML = \"\";\n    var img = document.createElement(\"img\");\n    img.src = this.datasource.map_image;\n    img.className = \"map-image\";\n    mapDetails.appendChild(img);\n    mapDetails.appendChild(document.createElement(\"br\"));\n    var uploadNewMapImage = document.createElement(\"input\");\n    uploadNewMapImage.type = \"file\";\n    uploadNewMapImage.id = \"newUpdatedMapImage\";\n    mapDetails.appendChild(window.wrapValueWithLabelAndRow(\"Select a New Map Image:\", uploadNewMapImage, \"map\"));\n    var mapName = document.createElement(\"div\");\n    mapName.innerHTML = this.datasource.map_name;\n    mapDetails.appendChild(window.wrapValueWithLabelAndRow(\"Map Name:\", mapName, \"map\"));\n    var mapDisplayName = document.createElement(\"input\");\n    mapDisplayName.type = \"text\";\n    mapDisplayName.value = this.datasource.map_display_name;\n    mapDisplayName.className = \"form-control\";\n    mapDisplayName.id = \"mapDisplayName\";\n    mapDisplayName.placeholder = \"Map Display Name\";\n    mapDetails.appendChild(window.wrapValueWithLabelAndRow(\"Map Display Name:\", mapDisplayName, \"map\"));\n    var mapWidth = document.createElement(\"input\");\n    mapWidth.type = \"number\";\n    mapWidth.value = this.datasource.map_width;\n    mapWidth.className = \"form-control\";\n    mapWidth.placeholder = \"Map Width\";\n    mapWidth.id = \"mapWidth\";\n    mapDetails.appendChild(window.wrapValueWithLabelAndRow(\"Map Width:\", mapWidth, \"map\"));\n    var mapHeight = document.createElement(\"input\");\n    mapHeight.type = \"number\";\n    mapHeight.value = this.datasource.map_height;\n    mapHeight.className = \"form-control\";\n    mapHeight.placeholder = \"Map Height\";\n    mapHeight.id = \"mapHeight\";\n    mapDetails.appendChild(window.wrapValueWithLabelAndRow(\"Map Height:\", mapHeight, \"map\"));\n    var updateMapButton = document.createElement(\"button\");\n    updateMapButton.className = \"btn btn-primary\";\n    updateMapButton.innerText = \"Update Map Configuration\";\n    updateMapButton.onclick = function (evt) {\n        var mapName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMap.latestData().map_name;\n        var allMaps = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.latestData();\n        var mapItem;\n        for (var x = 0; x \u003c allMaps.length; x++) {\n            if (allMaps[x].data.map_name === mapName) {\n                mapItem = allMaps[x];\n            }\n        }\n        mapItem.data.map_display_name = document.getElementById(\"mapDisplayName\").value;\n        mapItem.data.map_width = document.getElementById(\"mapWidth\").value;\n        mapItem.data.map_height = document.getElementById(\"mapHeight\").value;\n        var onItemSave = function (err, data) {\n            if (err) {\n                alert(\"Failed to Update Map Configuration\");\n            } else {\n                CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.refresh();\n                document.getElementById(\"mapDetails\").className = \"hidden\";\n                document.getElementById(\"mapUpdatedSuccessfully\").className = \"\";\n            }\n        }\n        var newMapFile = document.getElementById(\"newUpdatedMapImage\").files;\n        if (newMapFile.length === 1) {\n            var reader = new FileReader();\n            reader.readAsDataURL(newMapFile[0]);\n            reader.onload = function () {\n                mapItem.data.map_image = reader.result;\n                mapItem.save(onItemSave);\n            }\n        } else {\n            mapItem.save(onItemSave);\n        }\n    };\n    mapDetails.appendChild(updateMapButton);\n    mapDetails.appendChild(document.createElement(\"br\"));\n    var deleteMapButton = document.createElement(\"button\");\n    deleteMapButton.className = \"btn btn-danger\";\n    deleteMapButton.innerText = \"Delete Map Configuration\";\n    deleteMapButton.onclick = function (evt) {\n        var mapDisplayName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMap.latestData().map_display_name;\n        if (window.confirm(\"Are you sure you want to delete the map '\" + mapDisplayName + \"'?\")) {\n            var mapName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMap.latestData().map_name;\n            var allMaps = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.latestData();\n            for (var x = 0; x \u003c allMaps.length; x++) {\n                if (allMaps[x].data.map_name === mapName) {\n                    allMaps[x].destroy(function (err, data) {\n                        if (err) {\n                            alert(\"Failed to Delete Map\");\n                        } else {\n                            CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().maps.refresh();\n                            document.getElementById(\"mapDeletedSuccessfully\").className = \"\";\n                            document.getElementById(\"mapDetails\").className = \"hidden\";\n                        }\n                    });\n                    break;\n                }\n            }\n        }\n    }\n    mapDetails.appendChild(deleteMapButton);\n    document.getElementById(\"mapUpdatedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"mapDeletedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"selectAMapMessage\").className = \"hidden\";\n    document.getElementById(\"mapDetails\").className = \"\";\n} else {\n    document.getElementById(\"mapUpdatedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"mapDeletedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"selectAMapMessage\").className = \"\";\n    document.getElementById(\"mapDetails\").className = \"hidden\";\n}\n\nif (!window.wrapValueWithLabelAndRow) {\n    window.wrapValueWithLabelAndRow = function (labelText, valueElement, cssClassPrefix) {\n        var newRow = document.createElement(\"div\");\n        newRow.className = \"row\";\n        var label = document.createElement(\"div\");\n        label.className = \"col-md-6 \" + cssClassPrefix + \"-label\";\n        label.innerText = labelText;\n        newRow.appendChild(label);\n        valueElement.className += \" col-md-6 \" + cssClassPrefix + \"-value\";\n        newRow.appendChild(valueElement);\n        return newRow;\n    }\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "a71930bd-c7a2-4b71-a9c5-0bb657b075db": {
+                "externalScripts": [],
+                "id": "a71930bd-c7a2-4b71-a9c5-0bb657b075db",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "ba1cda00-509e-43a0-9674-5b10b38db18e",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".asset-label {\n    text-align: right;\n}\n\n.asset-value {\n    text-align: left;\n}\n\n.hidden {\n    display: none;\n}",
+                                "HTML": "\u003cdiv class=\"container-fluid text-center\"\u003e\n  \u003cdiv id=\"assetActivatedSuccess\"\u003e\n    Asset Successfully Activated!\n  \u003c/div\u003e\n  \u003cdiv id=\"selectANewAssetMessage\"\u003e\n    Please select a New Asset from the List on the left.\n  \u003c/div\u003e\n  \u003cdiv id=\"newAssetDetails\"\u003e\n    \u003c!-- dynamically generated via JS --\u003e  \n  \u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource) {\n  //display read only config data for the asset\n  var newAssetDetails = document.getElementById(\"newAssetDetails\");\n  //clear any old values\n  newAssetDetails.innerHTML = \"\";\n  //add name as title\n  var nameTitle = document.createElement(\"h2\");\n  nameTitle.innerText = this.datasource.name;\n  newAssetDetails.append(nameTitle);\n  for (var key in this.datasource) {\n    if (this.datasource.hasOwnProperty(key) \u0026\u0026 key !== \"name\") {\n      var newRow = document.createElement(\"div\");\n      newRow.className = \"row\";\n      var label = document.createElement(\"div\");\n      label.className = \"col-md-6 asset-label\";\n      label.innerText = key + \":\";\n      newRow.append(label);\n      var value = document.createElement(\"div\");\n      value.className = \"col-md-6 asset-value\";\n      //if it's a timestamp, let's make the format consistent, and easily readable\n      if (key === \"created_date\" || key === \"last_active_date\" || key === \"last_location_update\") {\n        var timestamp;\n        if (typeof this.datasource[key] === \"string\") {\n          timestamp = new Date(this.datasource[key]).toLocaleString();\n        } else if (this.datasource[key] !== null){\n          timestamp = new Date(this.datasource[key]*1000).toLocaleString();\n        } else {\n          timestamp = \"N/A\";\n        }\n        value.innerText = timestamp;\n      } else {\n        value.innerText = this.datasource[key];\n      }\n      newRow.append(value);\n      newAssetDetails.append(newRow);\n    }\n  }\n  //display configurable asset_type and map_name dropdowns, options loaded from a datasource\n  var assetTypes = datasources[\"assetTypes\"].latestData();\n  newAssetDetails.append(window.buildSelect(assetTypes, \"name\", \"display_name\", \"Asset Type\", \"newAssetTypeSelect\"));\n  var maps = datasources[\"maps\"].latestData();\n  newAssetDetails.append(window.buildSelect(maps, \"map_name\", \"map_display_name\", \"Map\", \"newMapSelect\"));\n  newAssetDetails.append(document.createElement(\"br\"));\n  var activateAssetButton = document.createElement(\"button\");\n  activateAssetButton.innerText = \"Activate Asset\";\n  activateAssetButton.className = \"btn btn-primary\";\n  activateAssetButton.onclick = function(event) {\n    var deviceName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedNewAsset.latestData().name;\n    var assetType = document.getElementById(\"newAssetTypeSelect\").value;\n    var mapName = document.getElementById(\"newMapSelect\").value;\n    CB_PORTAL.ClearBlade.Device().updateDeviceByName(deviceName, {\"asset_type\":assetType, \"map_name\": mapName}, false, function (err, data) {\n      if (err) {\n        data = JSON.parse(data);\n        var assetDetails = document.getElementById(\"newAssetDetails\");\n        var errorMessage = document.createElement(\"div\");\n        errorMessage.innerText = \"Failed to Activate Device: \" + data.error.detail;\n        assetDetails.append(errorMessage);\n      } else {\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getNewAssets.refresh();\n        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedNewAsset.sendData({});\n        document.getElementById(\"assetActivatedSuccess\").className = \"\";\n        document.getElementById(\"selectANewAssetMessage\").className = \"\";\n        document.getElementById(\"newAssetDetails\").className = \"hidden\";\n      }\n    });\n  };\n  newAssetDetails.append(activateAssetButton);\n  document.getElementById(\"selectANewAssetMessage\").className = \"hidden\";\n  document.getElementById(\"assetActivatedSuccess\").className = \"hidden\";\n  newAssetDetails.className = \"\";\n} else {\n  document.getElementById(\"selectANewAssetMessage\").className = \"\";\n  document.getElementById(\"newAssetDetails\").className = \"hidden\";\n  document.getElementById(\"assetActivatedSuccess\").className = \"hidden\";\n}\n\nif (!window.buildSelect) {\n  window.buildSelect = function (arrayOfDataObjects, keyForValue, keyForText, labelText, idForSelect) {\n    var container = document.createElement(\"div\");\n    container.className = \"row\";\n    var labelDiv = document.createElement(\"div\");\n    labelDiv.className = \"col-md-6 asset-label\";\n    labelDiv.innerText = labelText + \":\";\n    container.append(labelDiv);\n    var valueDiv = document.createElement(\"div\");\n    valueDiv.className = \"col-md-6 asset-value\";\n    var select = document.createElement(\"select\");\n    select.id = idForSelect;\n    select.className = \"form-control\";\n    for (var x = 0; x \u003c arrayOfDataObjects.length; x++) {\n      var option = document.createElement(\"option\");\n      option.value = arrayOfDataObjects[x].data[keyForValue];\n      option.text = arrayOfDataObjects[x].data[keyForText];\n      select.append(option);\n    }\n    valueDiv.append(select);\n    container.append(valueDiv);\n    return container;\n  }\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "dd17abfd-af9a-4417-b111-f2bddc3f2695",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "brand": {
+                "externalScripts": [],
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "value": "ClearBlade"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "c3f0280f-37be-42a4-9386-6e0e01451dbc": {
+                "externalScripts": [],
+                "id": "c3f0280f-37be-42a4-9386-6e0e01451dbc",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": false,
+                    "allowSearch": true,
+                    "displayAttribute": "name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "0803117e-bde7-4c3d-9f5e-b5b8e756f590",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "e918ceee-ca55-4a9b-a816-f51e5a7a70ac",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "if (this.datasource.success) {\n    return this.datasource.results;\n} else {\n    return [];\n}\n"
+                        }
+                    },
+                    "statusAttribute": "is_active",
+                    "titleColor": "#000000"
+                },
+                "tab": "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "ce444d5f-263a-459b-9c4c-f4ffeb984b63": {
+                "externalScripts": [],
+                "id": "ce444d5f-263a-459b-9c4c-f4ffeb984b63",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "e96188a7-7486-48b4-a8dc-82e9ef5aea1f",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".asset-type-label {\n    text-align: right;\n}\n\n.asset-type-value {\n    text-align: left;\n}\n\n.hidden {\n    display: none;\n}\n\n.btn {\n    margin-bottom: 10px;\n}\n\n.asset-type-image {\n    width: 10%;\n    height: 10%;\n}",
+                                "HTML": "\u003cdiv class=\"container-fluid text-center\"\u003e\n  \u003cdiv id=\"assetTypeUpdatedSuccessfully\"\u003e\n    Asset Type Successfully Updated!\n  \u003c/div\u003e\n  \u003cdiv id=\"assetTypeDeletedSuccessfully\"\u003e\n    Asset Type Successfully Deleted!\n  \u003c/div\u003e\n  \u003cdiv id=\"selectAnAssetTypeMessage\"\u003e\n    Please select an Asset Type from the List on the left.\n  \u003c/div\u003e\n  \u003cdiv id=\"assetTypeDetails\"\u003e\n    \u003c!-- dynamically generated via JS --\u003e  \n  \u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource) {\n    var assetTypeDetails = document.getElementById(\"assetTypeDetails\");\n    assetTypeDetails.innerHTML = \"\";\n    var img = document.createElement(\"img\");\n    img.src = this.datasource.display_icon;\n    img.className = \"asset-type-image\";\n    assetTypeDetails.appendChild(img);\n    var uploadNewAssetTypeImage = document.createElement(\"input\");\n    uploadNewAssetTypeImage.type = \"file\";\n    uploadNewAssetTypeImage.id = \"newUpdatedAssetTypeImage\";\n    assetTypeDetails.appendChild(window.wrapValueWithLabelAndRow(\"Select a New Asset Type Image:\", uploadNewAssetTypeImage, \"asset-type\"));\n    var assetTypeName = document.createElement(\"div\");\n    assetTypeName.innerHTML = this.datasource.name;\n    assetTypeDetails.appendChild(window.wrapValueWithLabelAndRow(\"Asset Type Name:\", assetTypeName, \"asset-type\"));\n    var assetTypeDisplayName = document.createElement(\"input\");\n    assetTypeDisplayName.type = \"text\";\n    assetTypeDisplayName.className = \"form-control\";\n    assetTypeDisplayName.value = this.datasource.display_name;\n    assetTypeDisplayName.placeholder = \"Asset Type Display Name\";\n    assetTypeDisplayName.id = \"assetTypeDisplayName\";\n    assetTypeDetails.appendChild(window.wrapValueWithLabelAndRow(\"Asset Type Display Name:\", assetTypeDisplayName, \"asset-type\"));\n    var updateAssetTypeButton = document.createElement(\"button\");\n    updateAssetTypeButton.className = \"btn btn-primary\";\n    updateAssetTypeButton.innerText = \"Update Asset Type Configuration\";\n    updateAssetTypeButton.onclick = function (evt) {\n        var assetTypeName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAssetType.latestData().name;\n        var allAssetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n        var assetTypeItem;\n        for (var x = 0; x \u003c allAssetTypes.length; x++) {\n            if (allAssetTypes[x].data.name === assetTypeName) {\n                assetTypeItem = allAssetTypes[x];\n                break;\n            }\n        }\n        assetTypeItem.data.display_name = document.getElementById(\"assetTypeDisplayName\").value;\n        var onItemSave = function (err, data) {\n            if (err) {\n                alert(\"Failed to Update Asset Type Configuration\");\n            } else {\n                CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.refresh();\n                document.getElementById(\"assetTypeDetails\").className = \"hidden\";\n                document.getElementById(\"assetTypeUpdatedSuccessfully\").className = \"\";\n            }\n        };\n        var newAssetTypeFile = document.getElementById(\"newUpdatedAssetTypeImage\").files;\n        if (newAssetTypeFile.length === 1) {\n            var reader = new FileReader();\n            reader.readAsDataURL(newAssetTypeFile[0]);\n            reader.onload = function () {\n                assetTypeItem.data.display_icon = reader.result;\n                assetTypeItem.save(onItemSave);\n            }\n        } else {\n            assetTypeItem.save(onItemSave);\n        }\n    };\n    assetTypeDetails.appendChild(updateAssetTypeButton);\n    assetTypeDetails.appendChild(document.createElement(\"br\"));\n    var deleteAssetTypeButton = document.createElement(\"button\");\n    deleteAssetTypeButton.className = \"btn btn-danger\";\n    deleteAssetTypeButton.innerText = \"Delete Asset Type Configuration\";\n    deleteAssetTypeButton.onclick = function (evt) {\n        var assetTypeDisplayName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAssetType.latestData().display_name;\n        if (window.confirm(\"Are you sure you want to delete the asset type '\" + assetTypeDisplayName + \"'?\")) {\n            var assetTypeName = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAssetType.latestData().name;\n            var allAssetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n            for (var x = 0; x \u003c allAssetTypes.length; x++) {\n                if (allAssetTypes[x].data.name === assetTypeName) {\n                    allAssetTypes[x].destroy(function (err, data) {\n                        if (err) {\n                            alert(\"Failed to delete Asset Type\");\n                        } else {\n                            CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.refresh();\n                            document.getElementById(\"assetTypeDeletedSuccessfully\").className = \"\";\n                            document.getElementById(\"assetTypeDetails\").className = \"hidden\";\n                        }\n                    });\n                    break;\n                }\n            }\n        }\n    };\n    assetTypeDetails.appendChild(deleteAssetTypeButton);\n    document.getElementById(\"assetTypeUpdatedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"assetTypeDeletedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"selectAnAssetTypeMessage\").className = \"hidden\";\n    document.getElementById(\"assetTypeDetails\").className = \"\";\n} else {\n    document.getElementById(\"assetTypeUpdatedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"assetTypeDeletedSuccessfully\").className = \"hidden\";\n    document.getElementById(\"selectAnAssetTypeMessage\").className = \"\";\n    document.getElementById(\"assetTypeDetails\").className = \"hidden\";\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "b1aa02f3-d42e-4d1e-90c2-e250a6ece568",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "externalScripts": [],
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "externalScripts": [],
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "force_data": null,
+                        "value": "return portalTitle"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": null,
+    "last_updated": "08 Mar 18 21:24 UTC",
+    "name": "Asset Administration",
+    "system_key": "8897a4a90bc2ec9aba92beebf045",
+    "type": "custom_v2"
+}
