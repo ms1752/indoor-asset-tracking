@@ -1,0 +1,756 @@
+{
+    "config": {
+        "cols": {
+            "lg": 12,
+            "md": 10,
+            "sm": 6,
+            "xs": 4,
+            "xxs": 2
+        },
+        "currentBreakpointForFlyoutWidgets": "lg",
+        "currentBreakpointForPanes": "lg",
+        "currentBreakpointsForWidgets": {
+            "79b6c43d-b77f-4c36-907c-366b27b679e9": "lg",
+            "d02582d1-3f5d-4b46-95cb-4d5c95d036f0": "lg",
+            "dd39f953-17f4-4341-9cad-a0d9dab7f3fb": "lg"
+        },
+        "datasources": {
+            "411e8a32-ebff-4d8a-bc11-b93dfbac042f": {
+                "id": "411e8a32-ebff-4d8a-bc11-b93dfbac042f",
+                "name": "assetPositionPublish",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "TOPIC_NAME": "asset/position/+"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
+            "96544e46-b117-4ef4-baa4-d467bc01da96": {
+                "id": "96544e46-b117-4ef4-baa4-d467bc01da96",
+                "name": "getAssets",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "code_name": "getAssets",
+                    "payload": "{}",
+                    "refresh_interval": 0
+                },
+                "type": "CB_CODE_SERVICE"
+            },
+            "de628418-cb4f-45db-a2d8-f2e26e1210a6": {
+                "id": "de628418-cb4f-45db-a2d8-f2e26e1210a6",
+                "name": "selectedMap",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "eb099f15-0b95-4b63-9206-278e5f83e63f": {
+                "id": "eb099f15-0b95-4b63-9206-278e5f83e63f",
+                "name": "assetTypes",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "asset_types",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            },
+            "f552230a-5313-4eea-acd3-c3804ec2df26": {
+                "id": "f552230a-5313-4eea-acd3-c3804ec2df26",
+                "name": "selectedAsset",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "fc8e2a43-2d40-4974-94ec-7c05a4cd14d4": {
+                "id": "fc8e2a43-2d40-4974-94ec-7c05a4cd14d4",
+                "name": "maps",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "map_display_config",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            }
+        },
+        "externalScripts": [
+            {
+                "promise": {},
+                "shouldBlockAllWidgets": false,
+                "url": "https://code.createjs.com/1.0.0/easeljs.min.js"
+            }
+        ],
+        "flyoutWidgetLayout": {
+            "lg": [
+                {
+                    "h": 9,
+                    "i": "4ea2060d-d92a-4054-b0b1-b82b1b5ca0ab",
+                    "minH": 3,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "md": [],
+            "sm": [],
+            "xs": [
+                {
+                    "h": 39,
+                    "i": "4ea2060d-d92a-4054-b0b1-b82b1b5ca0ab",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 4,
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "xxs": []
+        },
+        "headerWidgetLayout": {
+            "lg": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 42,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 46,
+                    "x": 185,
+                    "y": 0
+                }
+            ],
+            "md": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 36,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 39,
+                    "x": 154,
+                    "y": 0
+                }
+            ],
+            "sm": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 34,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 37,
+                    "x": 117,
+                    "y": 0
+                }
+            ],
+            "xs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 28,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 31,
+                    "x": 71,
+                    "y": 0
+                }
+            ],
+            "xxs": [
+                {
+                    "h": 1,
+                    "i": "brand",
+                    "moved": false,
+                    "static": false,
+                    "w": 32,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 1,
+                    "i": "title",
+                    "moved": false,
+                    "static": false,
+                    "w": 33,
+                    "x": 47,
+                    "y": 0
+                }
+            ]
+        },
+        "pages": {
+            "Home": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "Home",
+                "isChild": false,
+                "isParam": false,
+                "name": "Home",
+                "path": ""
+            }
+        },
+        "paneGridWidgetLayouts": {
+            "79b6c43d-b77f-4c36-907c-366b27b679e9": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "51cbbb6d-f04c-4725-9400-8572a3cf89a1",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "d02582d1-3f5d-4b46-95cb-4d5c95d036f0": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "eb9e3e59-fc38-451f-b096-66b69e514f59",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "dd39f953-17f4-4341-9cad-a0d9dab7f3fb": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "0a23db46-7c3f-444e-b9e5-aea08fd96b53",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "paneLayouts": {
+            "Home": {
+                "lg": [
+                    {
+                        "h": 6,
+                        "i": "ee70b54c-558b-4212-877a-820ef26d0e66",
+                        "moved": false,
+                        "static": false,
+                        "w": 9,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 4,
+                        "i": "71a137ab-083b-4b60-bb7a-60ff80a11660",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "f85c7521-c8ce-40b4-b5a6-565ff070edf4",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 4
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            }
+        },
+        "panes": {
+            "71a137ab-083b-4b60-bb7a-60ff80a11660": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "71a137ab-083b-4b60-bb7a-60ff80a11660",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "dd39f953-17f4-4341-9cad-a0d9dab7f3fb",
+                    "tabIds": [
+                        "dd39f953-17f4-4341-9cad-a0d9dab7f3fb"
+                    ],
+                    "tabTitles": {
+                        "dd39f953-17f4-4341-9cad-a0d9dab7f3fb": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "ee70b54c-558b-4212-877a-820ef26d0e66": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "ee70b54c-558b-4212-877a-820ef26d0e66",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "d02582d1-3f5d-4b46-95cb-4d5c95d036f0",
+                    "tabIds": [
+                        "d02582d1-3f5d-4b46-95cb-4d5c95d036f0"
+                    ],
+                    "tabTitles": {
+                        "d02582d1-3f5d-4b46-95cb-4d5c95d036f0": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "f85c7521-c8ce-40b4-b5a6-565ff070edf4": {
+                "customPaneId": "",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "f85c7521-c8ce-40b4-b5a6-565ff070edf4",
+                "pageId": "Home",
+                "tabInfo": {
+                    "activeTab": "79b6c43d-b77f-4c36-907c-366b27b679e9",
+                    "tabIds": [
+                        "79b6c43d-b77f-4c36-907c-366b27b679e9"
+                    ],
+                    "tabTitles": {
+                        "79b6c43d-b77f-4c36-907c-366b27b679e9": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            }
+        },
+        "savedPortalExists": true,
+        "theme": {
+            "graph": {
+                "four": "#E8E7C6",
+                "one": "#6E8592",
+                "three": "#DBA5A8",
+                "two": "#6E93A8"
+            },
+            "info": {
+                "display_name": "Standard",
+                "name": "STANDARD_THEME"
+            },
+            "items": {
+                "main": {
+                    "header": {
+                        "burgerBars": {
+                            "fontColor": "#f5f5f5"
+                        },
+                        "dropdown": {
+                            "fontColor": "#f5f5f5",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "styles": {
+                            "backgroundColor": "#6e8592"
+                        }
+                    },
+                    "panes": {
+                        "flyout": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            }
+                        },
+                        "primary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#6e8592"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#9db5c2",
+                                "fontColor": "#000000"
+                            }
+                        },
+                        "secondary": {
+                            "body": {
+                                "backgroundColor": "#f5f5f5"
+                            },
+                            "header": {
+                                "backgroundColor": "#9db5c2"
+                            },
+                            "tabs": {
+                                "activeTabUnderlineColor": "#425864",
+                                "backgroundColor": "#6e8592",
+                                "fontColor": "#000000"
+                            }
+                        }
+                    },
+                    "portal": {
+                        "styles": {
+                            "backgroundColor": "#ffffff"
+                        }
+                    },
+                    "widgets": {
+                        "BAR_CHART_WIDGET_COMPONENT": {
+                            "barColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ],
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000"
+                        },
+                        "BUTTON_WIDGET_COMPONENT": {
+                            "backgroundColor": "#f5f5f5",
+                            "backgroundHoverColor": "#c2c2c2",
+                            "borderColor": "#cccccc",
+                            "fontColor": "#000000"
+                        },
+                        "FILTERABLE_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "GOOGLE_MAP_WIDGET_COMPONENT": {
+                            "mapTheme": ""
+                        },
+                        "GROUPING_LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "LINE_CHART_WIDGET_COMPONENT": {
+                            "brushStroke": "#6e8592",
+                            "legendColor": "#000000",
+                            "lineColors": [
+                                {
+                                    "stroke": "#6E8592"
+                                },
+                                {
+                                    "stroke": "#6E93A8"
+                                },
+                                {
+                                    "stroke": "#DBA5A8"
+                                },
+                                {
+                                    "stroke": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "LIST_WIDGET_COMPONENT": {
+                            "activeFontColor": "#000000",
+                            "activeItemBackgroundColor": "#6e8592",
+                            "fontColor": "#000000",
+                            "listItemBackgroundColor": "#ffffff",
+                            "titleColor": "#000000"
+                        },
+                        "PIE_CHART_WIDGET_COMPONENT": {
+                            "cells": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "RADIAL_GAUGE_WIDGET_COMPONENT": {
+                            "backgroundColor": "#c2c2c2",
+                            "progressColor": "#6e8592"
+                        },
+                        "SPEEDOMETER_WIDGET": {
+                            "arrowColor": "#000000",
+                            "sectionColors": [
+                                {
+                                    "fill": "#6E8592"
+                                },
+                                {
+                                    "fill": "#6E93A8"
+                                },
+                                {
+                                    "fill": "#DBA5A8"
+                                },
+                                {
+                                    "fill": "#E8E7C6"
+                                }
+                            ]
+                        },
+                        "TEXT_WIDGET_COMPONENT": {
+                            "fontColor": "#000000",
+                            "fontFamily": "Helvetica",
+                            "fontSize": 18
+                        },
+                        "TOGGLE_WIDGET": {
+                            "backgroundColor": "#c2c2c2",
+                            "fontColor": "#000000",
+                            "offColor": "#ffffff",
+                            "onColor": "#6e8592"
+                        }
+                    }
+                }
+            },
+            "palette": {
+                "darkPrimary": "#c2c2c2",
+                "darkSecondary": "#425864",
+                "defaultPrimary": "#f5f5f5",
+                "defaultSecondary": "#6e8592",
+                "lightPrimary": "#ffffff",
+                "lightSecondary": "#9db5c2",
+                "primaryText": "#000000",
+                "secondaryText": "#000000"
+            }
+        },
+        "upgradesPerformed": {
+            "flyoutTitleUpgrade": true,
+            "headerBrandUpgrade": true,
+            "headerTitleUpgrade": true,
+            "widgetResizeUpgrade": true
+        },
+        "widgets": {
+            "0a23db46-7c3f-444e-b9e5-aea08fd96b53": {
+                "externalScripts": [],
+                "id": "0a23db46-7c3f-444e-b9e5-aea08fd96b53",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "f552230a-5313-4eea-acd3-c3804ec2df26",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".asset-label {\n    text-align: right;\n}\n\n.asset-value {\n    text-align: left;\n}",
+                                "HTML": "\u003cdiv id=\"selectedAsset\" class=\"text-center\"\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource \u0026\u0026 this.datasource.name) {\n  //display read only config data for the asset\n  var selectedAsset = document.getElementById(\"selectedAsset\");\n  //clear any old values\n  selectedAsset.innerHTML = \"\";\n  //add name as title\n  var nameTitle = document.createElement(\"h2\");\n  nameTitle.innerText = this.datasource.name;\n  selectedAsset.append(nameTitle);\n  for (var key in this.datasource) {\n    if (this.datasource.hasOwnProperty(key) \u0026\u0026 key !== \"name\" \u0026\u0026 key !== \"is_active\") {\n      var newRow = document.createElement(\"div\");\n      newRow.className = \"row\";\n      var label = document.createElement(\"div\");\n      label.className = \"col-md-6 asset-label\";\n      label.innerText = key + \":\";\n      newRow.append(label);\n      var value = document.createElement(\"div\");\n      value.className = \"col-md-6 asset-value\";\n      //if it's a timestamp, let's make the format consistent, and easily readable\n      if (key === \"created_date\" || key === \"last_active_date\" || key === \"last_location_update\") {\n        var timestamp;\n        if (typeof this.datasource[key] === \"string\") {\n          timestamp = new Date(this.datasource[key]).toLocaleString();\n        } else if (this.datasource[key] !== null){\n          timestamp = new Date(this.datasource[key]*1000).toLocaleString();\n        } else {\n          timestamp = \"N/A\";\n        }\n        value.innerText = timestamp;\n      } else {\n        value.innerText = this.datasource[key];\n      }\n      newRow.append(value);\n      selectedAsset.append(newRow);\n    }\n  }\n} else {\n  var selectedAsset = document.getElementById(\"selectedAsset\");\n  selectedAsset.innerHTML = \"\";\n  var selectAssetText = document.createElement(\"div\");\n  selectAssetText.innerText = \"Select an Asset on the map to view it's details.\";\n  selectedAsset.appendChild(selectAssetText);\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "dd39f953-17f4-4341-9cad-a0d9dab7f3fb",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "4ea2060d-d92a-4054-b0b1-b82b1b5ca0ab": {
+                "externalScripts": [],
+                "id": "4ea2060d-d92a-4054-b0b1-b82b1b5ca0ab",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": false,
+                    "allowSearch": true,
+                    "displayAttribute": "map_display_name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "de628418-cb4f-45db-a2d8-f2e26e1210a6",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "fc8e2a43-2d40-4974-94ec-7c05a4cd14d4",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "var fmtData = [];\nvar len = this.datasource.length;\nfor(var i = 0; i \u003c len; i++){\n  fmtData.push(this.datasource[i].data);\n}\nreturn fmtData;"
+                        }
+                    },
+                    "listTitle": "Maps",
+                    "statusAttribute": "map_display_name",
+                    "titleColor": "#000000"
+                },
+                "tab": null,
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "51cbbb6d-f04c-4725-9400-8572a3cf89a1": {
+                "externalScripts": [],
+                "id": "51cbbb6d-f04c-4725-9400-8572a3cf89a1",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "96544e46-b117-4ef4-baa4-d467bc01da96",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".table {\n    width: 80%;\n}",
+                                "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003ch2\u003eInactive Assets\u003c/h2\u003e\n  \u003ctable id=\"inactiveAssetsTable\" class=\"table table-bordered\"\u003e\u003c/table\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "//JavaScript\nif (this.datasource \u0026\u0026 this.datasource.success) {\n    var inactiveAssetsTable = document.getElementById(\"inactiveAssetsTable\");\n    inactiveAssetsTable.innerHTML = \"\";\n    var headerRow = document.createElement(\"tr\");\n    var nameHeader = document.createElement(\"th\");\n    nameHeader.innerText = \"Asset Name\";\n    headerRow.appendChild(nameHeader);\n    var lastActiveHeader = document.createElement(\"th\");\n    lastActiveHeader.innerText = \"Last Seen\";\n    headerRow.appendChild(lastActiveHeader);\n    inactiveAssetsTable.appendChild(headerRow);\n    inactiveAssetsTable.align = \"center\";\n    for (var x = 0; x \u003c this.datasource.results.length; x++) {\n        if (!this.datasource.results[x].is_active) {\n            var assetRow = document.createElement(\"tr\");\n            var assetName = document.createElement(\"td\");\n            assetName.innerText = this.datasource.results[x].name;\n            assetRow.appendChild(assetName);\n            var assetLastActive = document.createElement(\"td\");\n            assetLastActive.innerText = new Date(this.datasource.results[x].last_location_update).toLocaleString();\n            assetRow.appendChild(assetLastActive);\n            inactiveAssetsTable.appendChild(assetRow);\n        }\n    }\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "79b6c43d-b77f-4c36-907c-366b27b679e9",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "brand": {
+                "externalScripts": [],
+                "id": "brand",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "value": "ClearBlade"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "eb9e3e59-fc38-451f-b096-66b69e514f59": {
+                "externalScripts": [
+                    "https://code.createjs.com/1.0.0/easeljs.min.js"
+                ],
+                "id": "eb9e3e59-fc38-451f-b096-66b69e514f59",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "de628418-cb4f-45db-a2d8-f2e26e1210a6",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".asset-label {\n    text-align: right;\n}\n\n.hidden {\n    display: none;\n}",
+                                "HTML": "\u003cdiv id=\"selectAMapMessage\" style=\"text-align:center;\"\u003eSelect a Map to view From the Left Flyout Menu.\u003c/div\u003e\n\u003ch3 id=\"mapName\" style=\"text-align:center;\"\u003e\u003c/h3\u003e\n\u003ccanvas id=\"mapCanvas\"\u003e\u003c/canvas\u003e",
+                                "JavaScript": "//JavaScript\n\nvar ASSET_ICON_MAX_SIZE = 25;\nvar SELECTED_ASSET_COLOR = \"red\";\n\nwindow.updateAssetLocation = function (message) {\n    message = JSON.parse(message);\n    var asset = window.mapConfig.assets[message.asset_name];\n    window.mapConfig.stage.removeChild(asset);\n    asset.x = window.mapConfig.background_x + (message.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    asset.y = window.mapConfig.background_y + (message.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    window.mapConfig.stage.addChild(asset);\n    window.mapConfig.stage.update();\n}\n\nif (window.mapConfig === undefined) {\n    window.mapConfig = {\n        isLoaded: false,\n        scale: 1,\n        assets: {}\n    };\n    window.addEventListener('resize', function(event) {\n        window.mapConfig.stage.update();\n    });\n    datasources.assetPositionPublish.latestData.subscribe(window.updateAssetLocation);\n}\n\nwindow.drawMap = function (mapData) {\n    if (!window.mapConfig.stage) {\n        window.mapConfig.stage = new createjs.Stage(\"mapCanvas\");\n        window.mapConfig.stage.enableMouseOver(10);\n    }\n    window.mapConfig.stage.removeAllChildren();\n    var bgImg = document.createElement(\"img\");\n    window.mapConfig.stage.canvas.width = window.mapConfig.stage.canvas.parentElement.clientWidth;\n    window.mapConfig.stage.canvas.height = window.mapConfig.stage.canvas.parentElement.clientHeight;\n    bgImg.map_height = mapData.map_height;\n    bgImg.map_width = mapData.map_width;\n    bgImg.onload = function() {\n        var bg = new createjs.Bitmap(bgImg);\n        window.mapConfig.scale = determineScale(bgImg.map_width, bgImg.map_height, window.mapConfig.stage.canvas.width, window.mapConfig.stage.canvas.height);\n        bg.scale = window.mapConfig.scale;\n        //center map on stage\n        window.mapConfig.background_x = (window.mapConfig.stage.canvas.width - bg.image.width * bg.scaleX) / 2;\n        bg.x = window.mapConfig.background_x;\n        window.mapConfig.background_y = (window.mapConfig.stage.canvas.height - bg.image.height * bg.scaleY) / 2;\n        bg.y = window.mapConfig.background_y;\n        bgChild = window.mapConfig.stage.addChild(bg);\n        window.drawAssets(mapData.map_name);\n        window.mapConfig.stage.update();\n    };\n    bgImg.src = mapData.map_image;\n    document.getElementById(\"mapName\").innerText = mapData.map_display_name;\n}\n\nwindow.drawAssets = function (mapName) {\n    //remove any old assets\n    for (key in window.mapConfig.assets) {\n        window.mapConfig.stage.removeChild(window.mapConfig.assets[key]);\n        window.mapConfig.assets = {};\n    }\n    //create new assets\n    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n    var assetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n    for (var x = 0; x \u003c allAssets.length; x++) {\n        if (allAssets[x].is_active) {\n            var assetImage = document.createElement(\"img\");\n            assetImage.x_pos = allAssets[x].x_pos;\n            assetImage.y_pos = allAssets[x].y_pos;\n            assetImage.asset_name = allAssets[x].name;\n            assetImage.onload = function (evt) {\n                var container = new createjs.Container();\n                var newImage = new createjs.Bitmap(evt.target);\n                newImage.scale = determineScale(newImage.image.width, newImage.image.height, ASSET_ICON_MAX_SIZE, ASSET_ICON_MAX_SIZE);\n                container.x = window.mapConfig.background_x + (evt.target.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.y = window.mapConfig.background_y + (evt.target.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.name = evt.target.asset_name;\n                container.on(\"click\", function(evt) {\n                    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n                    var assetInteractedWith;\n                    for (var x = 0; x \u003c allAssets.length; x++) {\n                        if (allAssets[x].name === this.name) {\n                            assetInteractedWith = allAssets[x];\n                            break;\n                        }\n                    }\n                    if (this.selected) {\n                        this.selected = false;\n                        this.getChildAt(1).color = \"black\";\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData({});\n                    } else {\n                        this.selected = true;\n                        this.getChildAt(1).color = SELECTED_ASSET_COLOR;\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData(assetInteractedWith);\n                    }\n                    for (key in window.mapConfig.assets) {\n                        if (key !== this.name \u0026\u0026 window.mapConfig.assets[key].selected) {\n                            window.mapConfig.assets[key].selected = false;\n                            window.mapConfig.assets[key].getChildAt(1).color = \"black\";\n                        }\n                    }\n                    window.mapConfig.stage.update();\n                });\n                var assetName = new createjs.Text(evt.target.asset_name);\n                assetName.x = 0;\n                assetName.y = ASSET_ICON_MAX_SIZE;\n                container.addChild(newImage, assetName);\n                window.mapConfig.assets[evt.target.asset_name] = window.mapConfig.stage.addChild(container);\n                window.mapConfig.stage.update();\n            }\n            for (var y = 0; y \u003c assetTypes.length; y++) {\n                if (assetTypes[y].data.name === allAssets[x].asset_type) {\n                    assetImage.src = assetTypes[y].data.display_icon;\n                    break;\n                }\n            }\n        }\n    }\n}\n\nif (this.datasource) {\n    window.drawMap(this.datasource);\n    document.getElementById(\"selectAMapMessage\").className = \"hidden\";\n    document.getElementById(\"mapCanvas\").className = \"\";\n    document.getElementById(\"mapName\").className = \"\";\n} else {\n    document.getElementById(\"selectAMapMessage\").className = \"\";\n    document.getElementById(\"mapCanvas\").className = \"hidden\";\n    document.getElementById(\"mapName\").className = \"hidden\";\n}\n\nvar determineScale = function (originalWidth, originalHeight, stageWidth, stageHeight) {\n    var widthScale = stageWidth / originalWidth;\n    var heightScale = stageHeight / originalHeight;\n    return Math.min(widthScale, heightScale);\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "d02582d1-3f5d-4b46-95cb-4d5c95d036f0",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "flyoutTitle": {
+                "externalScripts": [],
+                "id": "flyoutTitle",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Helvetica",
+                    "fontSize": 30,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "type": "TEXT_WIDGET_COMPONENT"
+            },
+            "title": {
+                "externalScripts": [],
+                "id": "title",
+                "props": {
+                    "HAS_UNIQUE_STYLE": true,
+                    "fontColor": "#fff",
+                    "fontFamily": "Trebuchet MS",
+                    "fontSize": 18,
+                    "textContent": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "value": "return portalTitle"
+                    }
+                },
+                "tab": "HEADER",
+                "type": "TEXT_WIDGET_COMPONENT"
+            }
+        }
+    },
+    "description": null,
+    "last_updated": "07 Mar 18 22:23 UTC",
+    "name": "Asset Tracking",
+    "system_key": "8897a4a90bc2ec9aba92beebf045",
+    "type": "custom_v2"
+}
