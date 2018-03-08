@@ -3,10 +3,10 @@
         "email": "msprague@clearblade.com"
     },
     "clouds": [],
-    "description": "A Generic Indoor Asset Tracking system for viewing asset locations on a ma using x and y positions.",
+    "description": "A Generic Indoor Asset Tracking system for viewing asset locations on a map using x and y positions.",
     "domains": [],
     "gateways": [],
-    "image_url": "https://docs.clearblade.com/v/3/static/img/default_package.png",
+    "image_url": "https://imgur.com/a/dBQB6",
     "keywords": [
         "clearblade",
         "iot",
@@ -25,5 +25,6 @@
     "prog_lang": [],
     "protocols": [],
     "things": [],
-    "version": ""
+    "version": "",
+    "asset_types": ["Code Libraries", "Code Services", "Portals", "Collections", "Triggers", "Roles", "Timers", "Users", "Devices"]
 }
