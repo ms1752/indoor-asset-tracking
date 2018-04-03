@@ -12,7 +12,7 @@ var SYSTEM_CONFIG_COLLECTION_NAME = "system_configuration";
  * Fetch system wide configuration options from the system_configuration collection. Supports fetching all 
  * configuration options, as well as only a set of specific options
  * 
- * @param {string[]} configOptionsToGet - An array of configuration options to fetch from the system_configuration collection. Optional value,
+ * @param {[]string} configOptionsToGet - An array of configuration options to fetch from the system_configuration collection. Optional value,
  * omitted all configuration options are returned
  * @param {getSystemConfigurationCallback} callback - The callback that handles the response containing the requested system configuration values
  */

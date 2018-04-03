@@ -17,7 +17,10 @@
         "position",
         "tracking",
         "assets",
-        "xy-cordinates"
+        "xy-cordinates",
+	"sections",
+	"zones",
+	"alerts"
     ],
     "license": "MIT",
     "name": "indoor-asset-tracking",
@@ -25,6 +28,6 @@
     "prog_lang": [],
     "protocols": [],
     "things": [],
-    "version": "1.0.0",
+    "version": "2.0.0",
     "asset_types": ["Code Libraries", "Code Services", "Portals", "Collections", "Triggers", "Roles", "Timers", "Users", "Devices"]
 }

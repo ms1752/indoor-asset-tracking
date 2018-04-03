@@ -5,12 +5,13 @@
     "certificate": "",
     "description": "",
     "enabled": true,
-    "last_location_update": "2018-03-08T22:16:05.811Z",
+    "last_location_update": "2018-04-03T20:37:05.07Z",
+    "last_seen_location": "none",
     "map_name": "clearblade_office_floor_2",
     "name": "Rob-Camera",
     "state": "",
     "type": "asset",
-    "x_pos": 1025.7734375,
-    "y_pos": 907.2034301757812,
+    "x_pos": 294.8810119628906,
+    "y_pos": 34.6076545715332,
     "z_pos": 0
 }

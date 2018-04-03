@@ -5,12 +5,13 @@
     "certificate": "",
     "description": "",
     "enabled": true,
-    "last_location_update": "2018-03-08T22:16:05.811Z",
+    "last_location_update": "2018-04-03T20:37:05.07Z",
+    "last_seen_location": "none",
     "map_name": "clearblade_office_floor_2",
     "name": "Aaron-iPhone",
     "state": "",
     "type": "asset",
-    "x_pos": 90.5692138671875,
-    "y_pos": 1202.6971435546875,
+    "x_pos": 233.6104736328125,
+    "y_pos": 937.566162109375,
     "z_pos": 0
 }

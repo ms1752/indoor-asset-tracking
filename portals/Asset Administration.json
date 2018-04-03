@@ -12,6 +12,8 @@
         "currentBreakpointsForWidgets": {
             "0b3ce8e8-2a7c-4065-be3e-d8dbd037cbe1": "lg",
             "255d78c5-5b7f-4b28-8f98-28441637dbdc": "lg",
+            "3293836a-418b-4fc4-ac08-b7fb955ef967": "lg",
+            "38b69fba-187c-4506-a924-1bcd18b951a6": "lg",
             "46b7bad7-677c-4e90-b780-b5df3949bbd2": "lg",
             "4ed85735-7045-40cf-926f-0ceee76f977b": "lg",
             "9065b98b-04e9-41d3-81cc-df35fc7e9d54": "lg",
@@ -19,6 +21,7 @@
             "9cc4f6ab-4142-48d4-9e49-74ef5b46fbec": "lg",
             "aef971a8-7422-4ba9-b773-b3a8985f092c": "lg",
             "b1aa02f3-d42e-4d1e-90c2-e250a6ece568": "lg",
+            "c8281882-8d55-49aa-999c-f1ee2b6aa973": "lg",
             "dca4fe4d-4d4b-47f1-8021-586a021ccbf4": "lg",
             "dd17abfd-af9a-4417-b111-f2bddc3f2695": "lg",
             "eea8c960-8de7-4356-ac3d-9785062651c9": "lg"
@@ -51,6 +54,25 @@
                 },
                 "type": "LOCAL_DATASOURCE_PLUGIN"
             },
+            "ae5bc5ce-0020-468d-a5cb-3a7ac8015a68": {
+                "id": "ae5bc5ce-0020-468d-a5cb-3a7ac8015a68",
+                "name": "selectedPage",
+                "settings": {
+                    "defaultValue": "Home"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
+            },
+            "b3994e87-5b7a-44a7-bf05-f255e949db35": {
+                "id": "b3994e87-5b7a-44a7-bf05-f255e949db35",
+                "name": "sections",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "sections",
+                    "refresh_interval": 0
+                },
+                "type": "CB_COLLECTION"
+            },
             "ba1cda00-509e-43a0-9674-5b10b38db18e": {
                 "id": "ba1cda00-509e-43a0-9674-5b10b38db18e",
                 "name": "selectedNewAsset",
@@ -69,6 +91,14 @@
                     "refresh_interval": 0
                 },
                 "type": "CB_COLLECTION"
+            },
+            "bb0171a0-90f3-44a0-8613-549d552ac4eb": {
+                "id": "bb0171a0-90f3-44a0-8613-549d552ac4eb",
+                "name": "selectedMapSectionManager",
+                "settings": {
+                    "defaultValue": "null"
+                },
+                "type": "LOCAL_DATASOURCE_PLUGIN"
             },
             "e918ceee-ca55-4a9b-a816-f51e5a7a70ac": {
                 "id": "e918ceee-ca55-4a9b-a816-f51e5a7a70ac",
@@ -103,12 +133,60 @@
                 "type": "CB_CODE_SERVICE"
             }
         },
-        "externalScripts": [],
+        "externalScripts": [
+            {
+                "promise": {},
+                "shouldBlockAllWidgets": false,
+                "url": "https://code.createjs.com/1.0.0/easeljs.min.js"
+            }
+        ],
         "flyoutWidgetLayout": {
-            "lg": [],
+            "lg": [
+                {
+                    "h": 9,
+                    "i": "631cf722-a059-472b-9726-c71a8b59d4fe",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 9,
+                    "i": "9569073b-9244-48d4-92db-e1730161ac12",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 2,
+                    "x": 0,
+                    "y": 9
+                }
+            ],
             "md": [],
             "sm": [],
-            "xs": [],
+            "xs": [
+                {
+                    "h": 7,
+                    "i": "631cf722-a059-472b-9726-c71a8b59d4fe",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 4,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "h": 48,
+                    "i": "9569073b-9244-48d4-92db-e1730161ac12",
+                    "minH": 3,
+                    "moved": false,
+                    "static": false,
+                    "w": 4,
+                    "x": 0,
+                    "y": 7
+                }
+            ],
             "xxs": []
         },
         "headerWidgetLayout": {
@@ -222,6 +300,16 @@
                 "name": "Add New Map",
                 "path": ""
             },
+            "89bfb736-897a-4c9e-9719-d1dcc0191766": {
+                "children": [],
+                "defaultValue": "",
+                "href": "",
+                "id": "89bfb736-897a-4c9e-9719-d1dcc0191766",
+                "isChild": false,
+                "isParam": false,
+                "name": "Section Manager",
+                "path": ""
+            },
             "Home": {
                 "children": [],
                 "defaultValue": "",
@@ -267,6 +355,38 @@
                         "i": "0e953abb-4800-44e3-a056-4e3870106fb6",
                         "minH": 3,
                         "w": 3,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "3293836a-418b-4fc4-ac08-b7fb955ef967": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "61ff6dbd-ff13-4a23-95f7-1806f4c3a05f",
+                        "minH": 3,
+                        "w": 1,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "38b69fba-187c-4506-a924-1bcd18b951a6": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "87970d4f-caa8-42dc-bff2-9af7af9bb599",
+                        "minH": 3,
+                        "w": 1,
                         "x": 0,
                         "y": 0
                     }
@@ -392,6 +512,22 @@
                 "xs": [],
                 "xxs": []
             },
+            "c8281882-8d55-49aa-999c-f1ee2b6aa973": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "e697d8b0-3358-41c1-96e2-743710430382",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
             "dca4fe4d-4d4b-47f1-8021-586a021ccbf4": {
                 "lg": [
                     {
@@ -452,6 +588,41 @@
                         "w": 7,
                         "x": 3,
                         "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
+            "89bfb736-897a-4c9e-9719-d1dcc0191766": {
+                "lg": [
+                    {
+                        "h": 7,
+                        "i": "5b13afeb-3e2d-458e-bf71-04f092adbb2f",
+                        "moved": false,
+                        "static": false,
+                        "w": 9,
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "h": 5,
+                        "i": "5a67174b-f000-411a-9cf1-69181f0b8731",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 0
+                    },
+                    {
+                        "h": 2,
+                        "i": "14d09729-e856-4dc0-b11a-900739cd4c5a",
+                        "moved": false,
+                        "static": false,
+                        "w": 3,
+                        "x": 9,
+                        "y": 5
                     }
                 ],
                 "md": [],
@@ -583,6 +754,28 @@
             }
         },
         "panes": {
+            "14d09729-e856-4dc0-b11a-900739cd4c5a": {
+                "customPaneId": "newSection",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "14d09729-e856-4dc0-b11a-900739cd4c5a",
+                "pageId": "89bfb736-897a-4c9e-9719-d1dcc0191766",
+                "tabInfo": {
+                    "activeTab": "c8281882-8d55-49aa-999c-f1ee2b6aa973",
+                    "tabIds": [
+                        "c8281882-8d55-49aa-999c-f1ee2b6aa973"
+                    ],
+                    "tabTitles": {
+                        "c8281882-8d55-49aa-999c-f1ee2b6aa973": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
             "2327eeaa-b7ac-4c54-b815-c12efd4b27bb": {
                 "customPaneId": "",
                 "header": {
@@ -644,6 +837,50 @@
                     ],
                     "tabTitles": {
                         "aef971a8-7422-4ba9-b773-b3a8985f092c": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "5a67174b-f000-411a-9cf1-69181f0b8731": {
+                "customPaneId": "sectionList",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "5a67174b-f000-411a-9cf1-69181f0b8731",
+                "pageId": "89bfb736-897a-4c9e-9719-d1dcc0191766",
+                "tabInfo": {
+                    "activeTab": "3293836a-418b-4fc4-ac08-b7fb955ef967",
+                    "tabIds": [
+                        "3293836a-418b-4fc4-ac08-b7fb955ef967"
+                    ],
+                    "tabTitles": {
+                        "3293836a-418b-4fc4-ac08-b7fb955ef967": "DOUBLE CLICK"
+                    },
+                    "tabbed": false
+                },
+                "themeType": "primary"
+            },
+            "5b13afeb-3e2d-458e-bf71-04f092adbb2f": {
+                "customPaneId": "sectionMgtMap",
+                "header": {
+                    "hide": true,
+                    "title": ""
+                },
+                "hiddenBreakpoints": {},
+                "hideBorders": false,
+                "id": "5b13afeb-3e2d-458e-bf71-04f092adbb2f",
+                "pageId": "89bfb736-897a-4c9e-9719-d1dcc0191766",
+                "tabInfo": {
+                    "activeTab": "38b69fba-187c-4506-a924-1bcd18b951a6",
+                    "tabIds": [
+                        "38b69fba-187c-4506-a924-1bcd18b951a6"
+                    ],
+                    "tabTitles": {
+                        "38b69fba-187c-4506-a924-1bcd18b951a6": "DOUBLE CLICK"
                     },
                     "tabbed": false
                 },
@@ -947,6 +1184,13 @@
                             "fontColor": "#000000",
                             "listItemBackgroundColor": "#ffffff",
                             "titleColor": "#000000"
+                        },
+                        "FORM_WIDGET_COMPONENT": {
+                            "cardBackgroundColor": "#f5f5f5",
+                            "fontColor": "#000000",
+                            "sliderColor": "#6E8592",
+                            "titleColor": "#000000",
+                            "toggleColor": "#6E8592"
                         },
                         "GOOGLE_MAP_WIDGET_COMPONENT": {
                             "mapTheme": ""
@@ -1255,6 +1499,85 @@
                 "tab": "9065b98b-04e9-41d3-81cc-df35fc7e9d54",
                 "type": "HTML_WIDGET_COMPONENT"
             },
+            "61ff6dbd-ff13-4a23-95f7-1806f4c3a05f": {
+                "externalScripts": [],
+                "id": "61ff6dbd-ff13-4a23-95f7-1806f4c3a05f",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "b3994e87-5b7a-44a7-bf05-f255e949db35",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".section-color {\n    border-radius: 10px;\n}\n\n.section-title {\n    font-size: 26px;\n}",
+                                "HTML": "\u003cdiv class=\"container-fluid text-center\"\u003e\n  \u003ch2\u003eSections\u003c/h2\u003e\n  \u003cdiv id=\"sectionDetails\"\u003e\n    \u003c!-- dynamically built via js --\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "var selectedMap = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMapSectionManager.latestData();\n\nif (this.datasource \u0026\u0026 selectedMap) {\n    var sections = this.datasource;\n    var sectionDetails = document.getElementById(\"sectionDetails\");\n    sectionDetails.innerHTML = \"\";\n    for (var x = 0; x \u003c sections.length; x++) {\n        if (sections[x].data \u0026\u0026 sections[x].data.map_name === selectedMap.map_name) {\n            var sectionRow = document.createElement(\"div\");\n            sectionRow.classList.add(\"row\", \"section-row\");\n            var sectionColor = document.createElement(\"div\");\n            sectionColor.classList.add(\"col-md-2\", \"section-color\");\n            sectionColor.style = \"background: \" + sections[x].data.section_color + \";\";\n            sectionRow.appendChild(sectionColor);\n            var sectionName = document.createElement(\"div\");\n            sectionName.classList.add(\"col-md-8\", \"section-title\");\n            sectionName.innerText = sections[x].data.section_name;\n            sectionRow.appendChild(sectionName);\n            var sectionDeleteWrapper = document.createElement(\"div\");\n            sectionDeleteWrapper.classList.add(\"col-md-2\", \"section-delete\");\n            var deleteButton = document.createElement(\"button\");\n            deleteButton.classList.add(\"btn\", \"btn-danger\");\n            deleteButton.innerText = \"Delete\";\n            deleteButton.sectionId = sections[x].data.item_id;\n            deleteButton.onclick = function (evt) {\n                var sections = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.latestData();\n                for (var x = 0; x \u003c sections.length; x++) {\n                    if (sections[x].data.item_id === this.sectionId) {\n                        if (window.confirm(\"Are you sure you want to delete the section '\" + sections[x].data.section_name + \"'?\")) {\n                            sections[x].destroy(function (err, data) {\n                                if (err) {\n                                    alert(\"Failed to Delete Section\");\n                                } else {\n                                    CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.refresh();\n                                    var selectedMap = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMapSectionManager.latestData();\n                                    window.drawSections(selectedMap.map_name);\n                                }\n                            });\n                        }\n                    }\n                }\n            }\n            sectionDeleteWrapper.appendChild(deleteButton);\n            sectionRow.appendChild(sectionDeleteWrapper);\n            sectionDetails.appendChild(sectionRow);\n        }\n    }\n    var selectedMap = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMapSectionManager.latestData();\n    window.drawSections(selectedMap.map_name);\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "3293836a-418b-4fc4-ac08-b7fb955ef967",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "631cf722-a059-472b-9726-c71a8b59d4fe": {
+                "externalScripts": [],
+                "id": "631cf722-a059-472b-9726-c71a8b59d4fe",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "ae5bc5ce-0020-468d-a5cb-3a7ac8015a68",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "CB_PORTAL.selectPage(this.widget.item_id);\n\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "CALCULATED_DATA_TYPE",
+                        "force_data": null,
+                        "value": "return [{\"label\": \"Home\", \"value\":{\"item_id\": \"/Home\"}},{\"label\": \"Section Manager\", \"value\":{\"item_id\": \"/Section Manager\"}}]"
+                    },
+                    "titleColor": "#000000",
+                    "trackingColumnName": "item_id"
+                },
+                "tab": null,
+                "type": "LIST_WIDGET_COMPONENT"
+            },
+            "87970d4f-caa8-42dc-bff2-9af7af9bb599": {
+                "externalScripts": [],
+                "id": "87970d4f-caa8-42dc-bff2-9af7af9bb599",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "bb0171a0-90f3-44a0-8613-549d552ac4eb",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": ".hidden {\n    display: none;\n}",
+                                "HTML": "\u003cdiv id=\"selectAMapMessageSectionManager\" style=\"text-align:center;\"\u003eSelect a Map to view From the Left Flyout Menu.\u003c/div\u003e\n\u003ch3 id=\"mapNameSectionManager\" style=\"text-align:center;\"\u003e\u003c/h3\u003e\n\u003ccanvas id=\"mapCanvasSectionManager\"\u003e\u003c/canvas\u003e",
+                                "JavaScript": "//JavaScript\n\nif (window.mapConfig === undefined) {\n    window.mapConfig = {\n        isLoaded: false,\n        scale: 1,\n        sections: {},\n        newSection: {\n            cords: [],\n            shape: null\n        }\n    };\n    window.addEventListener('resize', function(event) {\n        window.mapConfig.stage.update();\n    });\n}\n\nwindow.drawMap = function (mapData) {\n    if (!window.mapConfig.stage) {\n        window.mapConfig.stage = new createjs.Stage(\"mapCanvasSectionManager\");\n        window.mapConfig.stage.enableMouseOver(10);\n    }\n    window.mapConfig.stage.removeAllChildren();\n    var bgImg = document.createElement(\"img\");\n    window.mapConfig.stage.canvas.width = window.mapConfig.stage.canvas.parentElement.clientWidth;\n    window.mapConfig.stage.canvas.height = window.mapConfig.stage.canvas.parentElement.clientHeight;\n    bgImg.map_height = mapData.map_height;\n    bgImg.map_width = mapData.map_width;\n    bgImg.onload = function() {\n        var bg = new createjs.Bitmap(bgImg);\n        window.mapConfig.scale = determineScale(bgImg.map_width, bgImg.map_height, window.mapConfig.stage.canvas.width, window.mapConfig.stage.canvas.height);\n        bg.scale = window.mapConfig.scale;\n        //center map on stage\n        window.mapConfig.background_x = (window.mapConfig.stage.canvas.width - bg.image.width * bg.scaleX) / 2;\n        bg.x = window.mapConfig.background_x;\n        window.mapConfig.background_y = (window.mapConfig.stage.canvas.height - bg.image.height * bg.scaleY) / 2;\n        bg.y = window.mapConfig.background_y;\n        bgChild = window.mapConfig.stage.addChild(bg);\n        window.drawSections(mapData.map_name);\n        window.mapConfig.stage.update();\n    };\n    bgImg.src = mapData.map_image;\n    document.getElementById(\"mapNameSectionManager\").innerText = mapData.map_display_name;\n}\n\nwindow.drawSections = function (mapName) {\n    //clear all old sections from map\n    for (sect in window.mapConfig.sections) {\n        window.mapConfig.stage.removeChild(window.mapConfig.sections[sect]);\n    }\n    window.mapConfig.sections = {};\n    var sections = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.latestData();\n    for (var x = 0; x \u003c sections.length; x++) {\n        if (sections[x].data \u0026\u0026 sections[x].data.map_name === mapName) {\n            var sectionCords = JSON.parse(sections[x].data.coordinates);\n            var sectionShape = new createjs.Shape();\n            for (var y = 0; y \u003c sectionCords.length; y++) {\n                if (y === 0) {\n                    sectionShape.graphics.beginFill(sections[x].data.section_color);\n                    sectionShape.graphics.moveTo((sectionCords[y].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[y].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                } else {\n                    sectionShape.graphics.lineTo((sectionCords[y].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[y].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                }\n                //if last section cord, draw final line to first cord\n                if (y === sectionCords.length - 1) {\n                    sectionShape.graphics.lineTo((sectionCords[0].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[0].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                }\n            }\n            window.mapConfig.sections[sections[x].data.section_name] = sectionShape;\n            window.mapConfig.stage.addChild(sectionShape);\n        }\n    }\n    window.mapConfig.stage.update();\n}\n\nwindow.handleMapNewSectionClick = function (evt) {\n    if (window.mapConfig.newSection.cords.length === 0) {\n        var newSectionShape = new createjs.Shape();\n        newSectionShape.graphics.beginStroke(window.mapConfig.newSection.color).beginFill(window.mapConfig.newSection.color).moveTo(evt.stageX, evt.stageY);\n        window.mapConfig.stage.addChild(newSectionShape);\n        window.mapConfig.newSection.shape = newSectionShape;\n    } else {\n        window.mapConfig.newSection.shape.graphics.lineTo(evt.stageX, evt.stageY);\n    }\n    var newCords = {\n        x: (evt.stageX / window.mapConfig.scale) - window.mapConfig.background_x,\n        y: (evt.stageY / window.mapConfig.scale) - window.mapConfig.background_y\n    };\n    window.mapConfig.newSection.cords.push(newCords);\n    window.mapConfig.stage.update();\n}\n\nif (this.datasource) {\n    window.drawMap(this.datasource);\n    document.getElementById(\"selectAMapMessageSectionManager\").className = \"hidden\";\n    document.getElementById(\"mapCanvasSectionManager\").className = \"\";\n    document.getElementById(\"mapNameSectionManager\").className = \"\";\n} else {\n    document.getElementById(\"selectAMapMessageSectionManager\").className = \"\";\n    document.getElementById(\"mapCanvasSectionManager\").className = \"hidden\";\n    document.getElementById(\"mapNameSectionManager\").className = \"hidden\";\n}\n\nvar determineScale = function (originalWidth, originalHeight, stageWidth, stageHeight) {\n    var widthScale = stageWidth / originalWidth;\n    var heightScale = stageHeight / originalHeight;\n    return Math.min(widthScale, heightScale);\n}"
+                            }
+                        }
+                    }
+                },
+                "tab": "38b69fba-187c-4506-a924-1bcd18b951a6",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
             "8f907c98-d490-4ff8-af6a-2135920e748e": {
                 "externalScripts": [],
                 "id": "8f907c98-d490-4ff8-af6a-2135920e748e",
@@ -1295,6 +1618,49 @@
                     "titleColor": "#000000"
                 },
                 "tab": "46b7bad7-677c-4e90-b780-b5df3949bbd2",
+                "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
+            },
+            "9569073b-9244-48d4-92db-e1730161ac12": {
+                "externalScripts": [],
+                "id": "9569073b-9244-48d4-92db-e1730161ac12",
+                "props": {
+                    "HAS_UNIQUE_STYLE": false,
+                    "activeFontColor": "#000000",
+                    "activeItemBackgroundColor": "#6e8592",
+                    "allowFilters": true,
+                    "allowSearch": true,
+                    "displayAttribute": "map_display_name",
+                    "eventTarget": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "bb0171a0-90f3-44a0-8613-549d552ac4eb",
+                        "outgoing_parser": {
+                            "isDebugOn": false,
+                            "value": "CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.refresh()\n\nreturn this.widget;"
+                        }
+                    },
+                    "fontColor": "#000000",
+                    "htmlId": "mapListSectionManagement",
+                    "listItemBackgroundColor": "#ffffff",
+                    "listSource": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "DYNAMIC_DATA_TYPE",
+                            "STATIC_DATA_TYPE"
+                        ],
+                        "id": "0b70c0b7-7002-4013-b1e7-2fd6c84b9177",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "window.addEventListener(\"hashchange\", function (evt) {\n  var newHash = window.location.hash.substr(1);\n  var mapList = document.getElementById(\"mapListSectionManagement\");\n  if (newHash === \"/Section%20Manager\") {\n    mapList.classList.remove(\"hidden\");\n  } else {\n    mapList.classList.add(\"hidden\");\n  }\n}, false);\n\n\nvar fmtData = [];\nvar len = this.datasource.length;\nfor(var i = 0; i \u003c len; i++){\n  fmtData.push(this.datasource[i].data);\n}\nreturn fmtData;"
+                        }
+                    },
+                    "listTitle": "Maps",
+                    "statusAttribute": "map_display_name",
+                    "titleColor": "#000000"
+                },
+                "tab": null,
                 "type": "FILTERABLE_LIST_WIDGET_COMPONENT"
             },
             "9c71577d-58d3-4121-bb8b-2796323babe8": {
@@ -1426,6 +1792,30 @@
                 "tab": "b1aa02f3-d42e-4d1e-90c2-e250a6ece568",
                 "type": "HTML_WIDGET_COMPONENT"
             },
+            "e697d8b0-3358-41c1-96e2-743710430382": {
+                "externalScripts": [],
+                "id": "e697d8b0-3358-41c1-96e2-743710430382",
+                "props": {
+                    "html": {
+                        "dataType": "STATIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": "return this.datasource;"
+                        },
+                        "value": {
+                            "CSS": ".new-section-label {\n  text-align: right;\n}\n\n.new-section-value {\n  text-align: left;\n}",
+                            "HTML": "\u003ch3 class=\"text-center\"\u003eCreate New Section\u003c/h3\u003e\n\u003cdiv id=\"newSectionDiv\" class=\"container-fluid text-center\"\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 new-section-label\"\u003eSection Name:\u003c/div\u003e\n    \u003cinput type=\"text\" id=\"newSectionName\" class=\"col-md-6 new-section-value form-control\"\u003e\n  \u003c/div\u003e\n  \u003cdiv class=\"row\"\u003e\n    \u003cdiv class=\"col-md-6 new-section-label\"\u003eSection Color:\u003c/div\u003e\n    \u003cinput type=\"color\" id=\"newSectionColor\" class=\"col-md-6 new-section-value\"\u003e\n  \u003c/div\u003e\n  \u003cbutton id=\"startDrawingSectionBtn\" class=\"btn btn-primary\"\u003eStart Drawing Section\u003c/button\u003e\n  \u003cbutton id=\"submitNewSectionBtn\" class=\"btn btn-primary hidden\"\u003eCreate Section\u003c/button\u003e\n  \u003cdiv id=\"newSectionResults\"\u003e\u003c/div\u003e\n\u003c/div\u003e",
+                            "JavaScript": "//JavaScript\ndocument.getElementById(\"startDrawingSectionBtn\").onclick = function (evt) {\n    var newColorHex = document.getElementById(\"newSectionColor\").value;\n    window.mapConfig.newSection.color = \"rgba(\"+parseInt(newColorHex.substring(1,3),16)+\",\"+parseInt(newColorHex.substring(3,5),16)+\",\"+parseInt(newColorHex.substring(5,7),16)+\",0.5)\";\n    this.classList.add(\"hidden\");\n    document.getElementById(\"submitNewSectionBtn\").classList.remove(\"hidden\");\n    window.mapConfig.stage.addEventListener(\"click\", window.handleMapNewSectionClick);\n}\n\ndocument.getElementById(\"submitNewSectionBtn\").onclick = function (evt) {\n    document.getElementById(\"submitNewSectionBtn\").classList.add(\"hidden\");\n    window.mapConfig.stage.removeEventListener(\"click\", window.handleMapNewSectionClick);\n    var newSectionObj = {\n        method: \"INSERT\",\n        data: {\n            section_name: document.getElementById(\"newSectionName\").value,\n            coordinates: JSON.stringify(window.mapConfig.newSection.cords),\n            map_name: CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMapSectionManager.latestData().map_name,\n            section_color: window.mapConfig.newSection.color\n        }\n    };\n    CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.sendData(newSectionObj).then(function(data) {\n        document.getElementById(\"newSectionName\").value = \"\";\n        document.getElementById(\"newSectionResults\").innerText = \"Section Successfully Created!\";\n        document.getElementById(\"startDrawingSectionBtn\").classList.remove(\"hidden\");\n        window.mapConfig.stage.removeChild(window.mapConfig.newSection.shape);\n        window.mapConfig.newSection = {\n            shape: null,\n            cords: []\n        };\n        // var selectedMap = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedMapSectionManager.latestData();\n        // window.drawSections(selectedMap.map_name);\n    }, function (err) {\n        document.getElementById(\"newSectionResults\").innerText = \"Failed to create new section: \" + err;\n        document.getElementById(\"startDrawingSectionBtn\").classList.remove(\"hidden\");\n        window.mapConfig.stage.removeChild(window.mapConfig.newSection.shape);\n        window.mapConfig.newSection = {\n            shape: null,\n            cords: []\n        };\n    });\n}"
+                        }
+                    }
+                },
+                "tab": "c8281882-8d55-49aa-999c-f1ee2b6aa973",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
             "flyoutTitle": {
                 "externalScripts": [],
                 "id": "flyoutTitle",
@@ -1461,8 +1851,10 @@
         }
     },
     "description": null,
-    "last_updated": "08 Mar 18 21:24 UTC",
+    "last_updated": "30 Mar 18 01:10 UTC",
     "name": "Asset Administration",
+    "permissions": 0,
+    "plugins": [],
     "system_key": "8897a4a90bc2ec9aba92beebf045",
     "type": "custom_v2"
 }

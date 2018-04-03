@@ -1,6 +1,6 @@
 {
-    "current_version": 10,
-    "dependencies": "clearblade,log",
+    "current_version": 22,
+    "dependencies": "clearblade,log,pointInsidePolygon",
     "logging_enabled": "true",
     "name": "updateDeviceLocation",
     "params": [],

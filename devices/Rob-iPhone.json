@@ -1,0 +1,17 @@
+{
+    "allow_certificate_auth": false,
+    "allow_key_auth": true,
+    "asset_type": null,
+    "certificate": "",
+    "description": "",
+    "enabled": true,
+    "last_location_update": null,
+    "last_seen_location": "none",
+    "map_name": null,
+    "name": "Rob-iPhone",
+    "state": "",
+    "type": "asset",
+    "x_pos": 50,
+    "y_pos": 50,
+    "z_pos": 0
+}

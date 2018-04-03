@@ -3,7 +3,7 @@
 
 ## Overview
 
-A Generic Indoor Asset Tracking system for viewing asset locations on a map using x and y positions.
+A Generic Indoor Asset Tracking system for viewing asset locations on a map using x and y positions. Also includes basic section management, and alerts.
 
 This is an ipm package, which contains one or more reusable assets within the ipm Community. The 'package.json' in this repo is a ipm spec's package.json, [here](https://docs.clearblade.com/v/3/6-ipm/spec), which is a superset of npm's package.json spec, [here](https://docs.npmjs.com/files/package.json).
 
@@ -19,6 +19,8 @@ Once new devices are added, you will need to visit the Asset Administration port
 
 ## API
 
+### Location
+
 Asset Location MQTT Message structure:  
 
 ```javascript
@@ -32,6 +34,12 @@ Asset Location MQTT Message structure:
 
 These messages should be published to invididual topics per asset, the asset name being the last path in the topic:
 `asset/location/<asset name>`
+
+### Alerts
+
+If you have defined sections via the Asset Management portal, the system will provide alerts any time an asset enters and/or leaves a section. These alerts are provided via MQTT, and the topic structure is:
+
+`alerts/<map_name>/<asset_name>`
 
 ## Functions
 
@@ -143,8 +151,8 @@ Callback type for fetching system configuration
 
 | Name | Description |
 | --- | --- |
-| Asset Administration | A portal for managing assets, map configurations, and asset types. Allows you to set the map and asset type for new assets. As well as update existing assets configuration. Also able to create, update, and delete map configurations and asset types as needed. |
-| Asset Tracking | | This portal if for viewing assets on the map, as well as seeing any active assets details. Also contains a list of inactive devices that have not been seen recently. |
+| Asset Administration | A portal for managing assets, map configurations, asset types, and sections. Allows you to set the map and asset type for new assets. As well as update existing assets configuration. Also able to create, update, and delete map configurations and asset types as needed. Section creation and deleting is also done through this portal, and allows you to draw any polygon based section over top the map, and the system will create alerts when any assets enter or leave any section. |
+| Asset Tracking | This portal is for viewing assets on the map, as well as seeing any active assets details. Also contains a list of inactive devices that have not been seen recently. Any sections created for this map will also displayed over top the map.|
 
 ### Collections
 | Name | Description |
@@ -152,6 +160,7 @@ Callback type for fetching system configuration
 | asset_types | Stores all needed data for each asset type, including it's name, display name, and a base64 string of the icon to use for this asset |
 | map_display_config | Stores all map display data for each map, including the name, display name, a base64 string of the map itself, and the width and height of the original map. |
 | system_configuration | Stores and system level configuration options needed by this package. An example is the time in minutes for a device to be considered inactive. |
+| sections | Stores section configuration data, including coordinates for defining the section polygon, fill color to use, and the section name. |
 
 
 ## Thank you

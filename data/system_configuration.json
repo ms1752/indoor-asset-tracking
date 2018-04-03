@@ -4,7 +4,8 @@
     "items": [
         {
             "config_name": "inactivity_time_in_minutes",
-            "config_value": "10"
+            "config_value": "10",
+            "item_id": "55c65ee5-7d0a-4c06-b570-c0d6f960d203"
         }
     ],
     "name": "system_configuration",
@@ -14,6 +15,11 @@
         "Asset Viewer": 1
     },
     "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
         {
             "ColumnName": "config_name",
             "ColumnType": "string",

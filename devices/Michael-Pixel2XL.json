@@ -5,12 +5,13 @@
     "certificate": "",
     "description": "",
     "enabled": true,
-    "last_location_update": "2018-03-08T22:16:05.811Z",
+    "last_location_update": "2018-04-03T20:37:05.07Z",
+    "last_seen_location": "Test Section",
     "map_name": "clearblade_office_floor_2",
     "name": "Michael-Pixel2XL",
     "state": "",
     "type": "asset",
-    "x_pos": 404.2071533203125,
-    "y_pos": 557.5656127929688,
+    "x_pos": 1073.4552001953125,
+    "y_pos": 171.63198852539062,
     "z_pos": 0
 }

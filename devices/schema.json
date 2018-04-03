@@ -29,6 +29,11 @@
             "ColumnName": "map_name",
             "ColumnType": "string",
             "PK": false
+        },
+        {
+            "ColumnName": "last_seen_location",
+            "ColumnType": "string",
+            "PK": false
         }
     ]
 }

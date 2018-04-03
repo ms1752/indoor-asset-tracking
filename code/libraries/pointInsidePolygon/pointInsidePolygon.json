@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "",
+    "description": "Check if a provided x/y point is contained within a polygon",
+    "name": "pointInsidePolygon",
+    "version": 2,
+    "visibility": "system"
+}

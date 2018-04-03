@@ -10,11 +10,22 @@
         "currentBreakpointForFlyoutWidgets": "lg",
         "currentBreakpointForPanes": "lg",
         "currentBreakpointsForWidgets": {
+            "5042c541-9cc7-4ea1-b4a6-beed747eb844": "lg",
             "79b6c43d-b77f-4c36-907c-366b27b679e9": "lg",
             "d02582d1-3f5d-4b46-95cb-4d5c95d036f0": "lg",
             "dd39f953-17f4-4341-9cad-a0d9dab7f3fb": "lg"
         },
         "datasources": {
+            "28c1d3be-bd90-4e70-b807-885aaa07cf4d": {
+                "id": "28c1d3be-bd90-4e70-b807-885aaa07cf4d",
+                "name": "alertsPublish",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "TOPIC_NAME": "alerts/+/+"
+                },
+                "type": "CB_MESSAGE_TOPIC"
+            },
             "411e8a32-ebff-4d8a-bc11-b93dfbac042f": {
                 "id": "411e8a32-ebff-4d8a-bc11-b93dfbac042f",
                 "name": "assetPositionPublish",
@@ -24,6 +35,17 @@
                     "TOPIC_NAME": "asset/position/+"
                 },
                 "type": "CB_MESSAGE_TOPIC"
+            },
+            "69685ff1-6e52-4dd6-9bbf-0635650194c6": {
+                "id": "69685ff1-6e52-4dd6-9bbf-0635650194c6",
+                "name": "sections",
+                "settings": {
+                    "CALL_ON_LOAD": true,
+                    "SUPPRESS_DATASOURCE_ERRORS": false,
+                    "collection_name": "sections",
+                    "refresh_interval": "0"
+                },
+                "type": "CB_COLLECTION"
             },
             "96544e46-b117-4ef4-baa4-d467bc01da96": {
                 "id": "96544e46-b117-4ef4-baa4-d467bc01da96",
@@ -225,6 +247,22 @@
             }
         },
         "paneGridWidgetLayouts": {
+            "5042c541-9cc7-4ea1-b4a6-beed747eb844": {
+                "lg": [
+                    {
+                        "h": 9,
+                        "i": "842189d7-a534-4b8c-8875-0cb42ac7e84e",
+                        "minH": 3,
+                        "w": 4,
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "md": [],
+                "sm": [],
+                "xs": [],
+                "xxs": []
+            },
             "79b6c43d-b77f-4c36-907c-366b27b679e9": {
                 "lg": [
                     {
@@ -369,12 +407,14 @@
                 "tabInfo": {
                     "activeTab": "79b6c43d-b77f-4c36-907c-366b27b679e9",
                     "tabIds": [
-                        "79b6c43d-b77f-4c36-907c-366b27b679e9"
+                        "79b6c43d-b77f-4c36-907c-366b27b679e9",
+                        "5042c541-9cc7-4ea1-b4a6-beed747eb844"
                     ],
                     "tabTitles": {
-                        "79b6c43d-b77f-4c36-907c-366b27b679e9": "DOUBLE CLICK"
+                        "5042c541-9cc7-4ea1-b4a6-beed747eb844": "Alerts",
+                        "79b6c43d-b77f-4c36-907c-366b27b679e9": "INACTIVE ASSETS"
                     },
-                    "tabbed": false
+                    "tabbed": true
                 },
                 "themeType": "primary"
             }
@@ -478,6 +518,13 @@
                             "fontColor": "#000000",
                             "listItemBackgroundColor": "#ffffff",
                             "titleColor": "#000000"
+                        },
+                        "FORM_WIDGET_COMPONENT": {
+                            "cardBackgroundColor": "#f5f5f5",
+                            "fontColor": "#000000",
+                            "sliderColor": "#6E8592",
+                            "titleColor": "#000000",
+                            "toggleColor": "#6E8592"
                         },
                         "GOOGLE_MAP_WIDGET_COMPONENT": {
                             "mapTheme": ""
@@ -664,13 +711,37 @@
                             "isDebugOn": false,
                             "value": {
                                 "CSS": ".table {\n    width: 80%;\n}",
-                                "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003ch2\u003eInactive Assets\u003c/h2\u003e\n  \u003ctable id=\"inactiveAssetsTable\" class=\"table table-bordered\"\u003e\u003c/table\u003e\n\u003c/div\u003e\n",
+                                "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003ch3\u003eInactive Assets\u003c/h3\u003e\n  \u003ctable id=\"inactiveAssetsTable\" class=\"table table-bordered\"\u003e\u003c/table\u003e\n\u003c/div\u003e\n",
                                 "JavaScript": "//JavaScript\nif (this.datasource \u0026\u0026 this.datasource.success) {\n    var inactiveAssetsTable = document.getElementById(\"inactiveAssetsTable\");\n    inactiveAssetsTable.innerHTML = \"\";\n    var headerRow = document.createElement(\"tr\");\n    var nameHeader = document.createElement(\"th\");\n    nameHeader.innerText = \"Asset Name\";\n    headerRow.appendChild(nameHeader);\n    var lastActiveHeader = document.createElement(\"th\");\n    lastActiveHeader.innerText = \"Last Seen\";\n    headerRow.appendChild(lastActiveHeader);\n    inactiveAssetsTable.appendChild(headerRow);\n    inactiveAssetsTable.align = \"center\";\n    for (var x = 0; x \u003c this.datasource.results.length; x++) {\n        if (!this.datasource.results[x].is_active) {\n            var assetRow = document.createElement(\"tr\");\n            var assetName = document.createElement(\"td\");\n            assetName.innerText = this.datasource.results[x].name;\n            assetRow.appendChild(assetName);\n            var assetLastActive = document.createElement(\"td\");\n            assetLastActive.innerText = new Date(this.datasource.results[x].last_location_update).toLocaleString();\n            assetRow.appendChild(assetLastActive);\n            inactiveAssetsTable.appendChild(assetRow);\n        }\n    }\n}"
                             }
                         }
                     }
                 },
                 "tab": "79b6c43d-b77f-4c36-907c-366b27b679e9",
+                "type": "HTML_WIDGET_COMPONENT"
+            },
+            "842189d7-a534-4b8c-8875-0cb42ac7e84e": {
+                "externalScripts": [],
+                "id": "842189d7-a534-4b8c-8875-0cb42ac7e84e",
+                "props": {
+                    "html": {
+                        "dataType": "DYNAMIC_DATA_TYPE",
+                        "force_data": [
+                            "STATIC_DATA_TYPE",
+                            "DYNAMIC_DATA_TYPE"
+                        ],
+                        "id": "28c1d3be-bd90-4e70-b807-885aaa07cf4d",
+                        "incoming_parser": {
+                            "isDebugOn": false,
+                            "value": {
+                                "CSS": "",
+                                "HTML": "\u003cdiv class=\"text-center\"\u003e\n  \u003ch2\u003eAlerts\u003c/h2\u003e\n  \u003cdiv id=\"alertList\"\u003e\u003c/div\u003e\n\u003c/div\u003e\n",
+                                "JavaScript": "if (typeof this.datasource === \"string\") {\n    var newAlert = document.createElement(\"div\");\n    newAlert.innerText = this.datasource;\n    var alertList = document.getElementById(\"alertList\");\n    alertList.insertBefore(newAlert, alertList.firstChild);\n}\n"
+                            }
+                        }
+                    }
+                },
+                "tab": "5042c541-9cc7-4ea1-b4a6-beed747eb844",
                 "type": "HTML_WIDGET_COMPONENT"
             },
             "brand": {
@@ -707,7 +778,7 @@
                             "value": {
                                 "CSS": ".asset-label {\n    text-align: right;\n}\n\n.hidden {\n    display: none;\n}",
                                 "HTML": "\u003cdiv id=\"selectAMapMessage\" style=\"text-align:center;\"\u003eSelect a Map to view From the Left Flyout Menu.\u003c/div\u003e\n\u003ch3 id=\"mapName\" style=\"text-align:center;\"\u003e\u003c/h3\u003e\n\u003ccanvas id=\"mapCanvas\"\u003e\u003c/canvas\u003e",
-                                "JavaScript": "//JavaScript\n\nvar ASSET_ICON_MAX_SIZE = 25;\nvar SELECTED_ASSET_COLOR = \"red\";\n\nwindow.updateAssetLocation = function (message) {\n    message = JSON.parse(message);\n    var asset = window.mapConfig.assets[message.asset_name];\n    window.mapConfig.stage.removeChild(asset);\n    asset.x = window.mapConfig.background_x + (message.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    asset.y = window.mapConfig.background_y + (message.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    window.mapConfig.stage.addChild(asset);\n    window.mapConfig.stage.update();\n}\n\nif (window.mapConfig === undefined) {\n    window.mapConfig = {\n        isLoaded: false,\n        scale: 1,\n        assets: {}\n    };\n    window.addEventListener('resize', function(event) {\n        window.mapConfig.stage.update();\n    });\n    datasources.assetPositionPublish.latestData.subscribe(window.updateAssetLocation);\n}\n\nwindow.drawMap = function (mapData) {\n    if (!window.mapConfig.stage) {\n        window.mapConfig.stage = new createjs.Stage(\"mapCanvas\");\n        window.mapConfig.stage.enableMouseOver(10);\n    }\n    window.mapConfig.stage.removeAllChildren();\n    var bgImg = document.createElement(\"img\");\n    window.mapConfig.stage.canvas.width = window.mapConfig.stage.canvas.parentElement.clientWidth;\n    window.mapConfig.stage.canvas.height = window.mapConfig.stage.canvas.parentElement.clientHeight;\n    bgImg.map_height = mapData.map_height;\n    bgImg.map_width = mapData.map_width;\n    bgImg.onload = function() {\n        var bg = new createjs.Bitmap(bgImg);\n        window.mapConfig.scale = determineScale(bgImg.map_width, bgImg.map_height, window.mapConfig.stage.canvas.width, window.mapConfig.stage.canvas.height);\n        bg.scale = window.mapConfig.scale;\n        //center map on stage\n        window.mapConfig.background_x = (window.mapConfig.stage.canvas.width - bg.image.width * bg.scaleX) / 2;\n        bg.x = window.mapConfig.background_x;\n        window.mapConfig.background_y = (window.mapConfig.stage.canvas.height - bg.image.height * bg.scaleY) / 2;\n        bg.y = window.mapConfig.background_y;\n        bgChild = window.mapConfig.stage.addChild(bg);\n        window.drawAssets(mapData.map_name);\n        window.mapConfig.stage.update();\n    };\n    bgImg.src = mapData.map_image;\n    document.getElementById(\"mapName\").innerText = mapData.map_display_name;\n}\n\nwindow.drawAssets = function (mapName) {\n    //remove any old assets\n    for (key in window.mapConfig.assets) {\n        window.mapConfig.stage.removeChild(window.mapConfig.assets[key]);\n        window.mapConfig.assets = {};\n    }\n    //create new assets\n    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n    var assetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n    for (var x = 0; x \u003c allAssets.length; x++) {\n        if (allAssets[x].is_active) {\n            var assetImage = document.createElement(\"img\");\n            assetImage.x_pos = allAssets[x].x_pos;\n            assetImage.y_pos = allAssets[x].y_pos;\n            assetImage.asset_name = allAssets[x].name;\n            assetImage.onload = function (evt) {\n                var container = new createjs.Container();\n                var newImage = new createjs.Bitmap(evt.target);\n                newImage.scale = determineScale(newImage.image.width, newImage.image.height, ASSET_ICON_MAX_SIZE, ASSET_ICON_MAX_SIZE);\n                container.x = window.mapConfig.background_x + (evt.target.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.y = window.mapConfig.background_y + (evt.target.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.name = evt.target.asset_name;\n                container.on(\"click\", function(evt) {\n                    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n                    var assetInteractedWith;\n                    for (var x = 0; x \u003c allAssets.length; x++) {\n                        if (allAssets[x].name === this.name) {\n                            assetInteractedWith = allAssets[x];\n                            break;\n                        }\n                    }\n                    if (this.selected) {\n                        this.selected = false;\n                        this.getChildAt(1).color = \"black\";\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData({});\n                    } else {\n                        this.selected = true;\n                        this.getChildAt(1).color = SELECTED_ASSET_COLOR;\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData(assetInteractedWith);\n                    }\n                    for (key in window.mapConfig.assets) {\n                        if (key !== this.name \u0026\u0026 window.mapConfig.assets[key].selected) {\n                            window.mapConfig.assets[key].selected = false;\n                            window.mapConfig.assets[key].getChildAt(1).color = \"black\";\n                        }\n                    }\n                    window.mapConfig.stage.update();\n                });\n                var assetName = new createjs.Text(evt.target.asset_name);\n                assetName.x = 0;\n                assetName.y = ASSET_ICON_MAX_SIZE;\n                container.addChild(newImage, assetName);\n                window.mapConfig.assets[evt.target.asset_name] = window.mapConfig.stage.addChild(container);\n                window.mapConfig.stage.update();\n            }\n            for (var y = 0; y \u003c assetTypes.length; y++) {\n                if (assetTypes[y].data.name === allAssets[x].asset_type) {\n                    assetImage.src = assetTypes[y].data.display_icon;\n                    break;\n                }\n            }\n        }\n    }\n}\n\nif (this.datasource) {\n    window.drawMap(this.datasource);\n    document.getElementById(\"selectAMapMessage\").className = \"hidden\";\n    document.getElementById(\"mapCanvas\").className = \"\";\n    document.getElementById(\"mapName\").className = \"\";\n} else {\n    document.getElementById(\"selectAMapMessage\").className = \"\";\n    document.getElementById(\"mapCanvas\").className = \"hidden\";\n    document.getElementById(\"mapName\").className = \"hidden\";\n}\n\nvar determineScale = function (originalWidth, originalHeight, stageWidth, stageHeight) {\n    var widthScale = stageWidth / originalWidth;\n    var heightScale = stageHeight / originalHeight;\n    return Math.min(widthScale, heightScale);\n}"
+                                "JavaScript": "//JavaScript\n\nvar ASSET_ICON_MAX_SIZE = 25;\nvar SELECTED_ASSET_COLOR = \"red\";\n\nwindow.updateAssetLocation = function (message) {\n    message = JSON.parse(message);\n    var asset = window.mapConfig.assets[message.asset_name];\n    window.mapConfig.stage.removeChild(asset);\n    asset.x = window.mapConfig.background_x + (message.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    asset.y = window.mapConfig.background_y + (message.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n    window.mapConfig.stage.addChild(asset);\n    window.mapConfig.stage.update();\n}\n\nif (window.mapConfig === undefined) {\n    window.mapConfig = {\n        isLoaded: false,\n        scale: 1,\n        assets: {},\n        sections: {}\n    };\n    window.addEventListener('resize', function(event) {\n        window.mapConfig.stage.update();\n    });\n    datasources.assetPositionPublish.latestData.subscribe(window.updateAssetLocation);\n}\n\nwindow.drawMap = function (mapData) {\n    if (!window.mapConfig.stage) {\n        window.mapConfig.stage = new createjs.Stage(\"mapCanvas\");\n        window.mapConfig.stage.enableMouseOver(10);\n    }\n    window.mapConfig.stage.removeAllChildren();\n    var bgImg = document.createElement(\"img\");\n    window.mapConfig.stage.canvas.width = window.mapConfig.stage.canvas.parentElement.clientWidth;\n    window.mapConfig.stage.canvas.height = window.mapConfig.stage.canvas.parentElement.clientHeight;\n    bgImg.map_height = mapData.map_height;\n    bgImg.map_width = mapData.map_width;\n    bgImg.onload = function() {\n        var bg = new createjs.Bitmap(bgImg);\n        window.mapConfig.scale = determineScale(bgImg.map_width, bgImg.map_height, window.mapConfig.stage.canvas.width, window.mapConfig.stage.canvas.height);\n        bg.scale = window.mapConfig.scale;\n        //center map on stage\n        window.mapConfig.background_x = (window.mapConfig.stage.canvas.width - bg.image.width * bg.scaleX) / 2;\n        bg.x = window.mapConfig.background_x;\n        window.mapConfig.background_y = (window.mapConfig.stage.canvas.height - bg.image.height * bg.scaleY) / 2;\n        bg.y = window.mapConfig.background_y;\n        bgChild = window.mapConfig.stage.addChild(bg);\n        window.drawAssets(mapData.map_name);\n        window.drawSections(mapData.map_name);\n        window.mapConfig.stage.update();\n    };\n    bgImg.src = mapData.map_image;\n    document.getElementById(\"mapName\").innerText = mapData.map_display_name;\n}\n\nwindow.drawAssets = function (mapName) {\n    //remove any old assets\n    for (key in window.mapConfig.assets) {\n        window.mapConfig.stage.removeChild(window.mapConfig.assets[key]);\n        window.mapConfig.assets = {};\n    }\n    //create new assets\n    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n    var assetTypes = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().assetTypes.latestData();\n    for (var x = 0; x \u003c allAssets.length; x++) {\n        if (allAssets[x].is_active) {\n            var assetImage = document.createElement(\"img\");\n            assetImage.x_pos = allAssets[x].x_pos;\n            assetImage.y_pos = allAssets[x].y_pos;\n            assetImage.asset_name = allAssets[x].name;\n            assetImage.onload = function (evt) {\n                var container = new createjs.Container();\n                var newImage = new createjs.Bitmap(evt.target);\n                newImage.scale = determineScale(newImage.image.width, newImage.image.height, ASSET_ICON_MAX_SIZE, ASSET_ICON_MAX_SIZE);\n                container.x = window.mapConfig.background_x + (evt.target.x_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.y = window.mapConfig.background_y + (evt.target.y_pos * window.mapConfig.scale) - (ASSET_ICON_MAX_SIZE/2);\n                container.name = evt.target.asset_name;\n                container.on(\"click\", function(evt) {\n                    var allAssets = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().getAssets.latestData().results;\n                    var assetInteractedWith;\n                    for (var x = 0; x \u003c allAssets.length; x++) {\n                        if (allAssets[x].name === this.name) {\n                            assetInteractedWith = allAssets[x];\n                            break;\n                        }\n                    }\n                    if (this.selected) {\n                        this.selected = false;\n                        this.getChildAt(1).color = \"black\";\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData({});\n                    } else {\n                        this.selected = true;\n                        this.getChildAt(1).color = SELECTED_ASSET_COLOR;\n                        CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().selectedAsset.sendData(assetInteractedWith);\n                    }\n                    for (key in window.mapConfig.assets) {\n                        if (key !== this.name \u0026\u0026 window.mapConfig.assets[key].selected) {\n                            window.mapConfig.assets[key].selected = false;\n                            window.mapConfig.assets[key].getChildAt(1).color = \"black\";\n                        }\n                    }\n                    window.mapConfig.stage.update();\n                });\n                var assetName = new createjs.Text(evt.target.asset_name);\n                assetName.x = 0;\n                assetName.y = ASSET_ICON_MAX_SIZE;\n                container.addChild(newImage, assetName);\n                window.mapConfig.assets[evt.target.asset_name] = window.mapConfig.stage.addChild(container);\n                window.mapConfig.stage.update();\n            }\n            for (var y = 0; y \u003c assetTypes.length; y++) {\n                if (assetTypes[y].data.name === allAssets[x].asset_type) {\n                    assetImage.src = assetTypes[y].data.display_icon;\n                    break;\n                }\n            }\n        }\n    }\n}\n\nwindow.drawSections = function(mapName) {\n    for (sect in window.mapConfig.sections) {\n        window.mapConfig.stage.removeChild(window.mapConfig.sections[sect]);\n    }\n    window.mapConfig.sections = {};\n    var sections = CB_PORTAL.portalModel.getDatasourceInstancesWithNameAsKey().sections.latestData();\n    for (var x = 0; x \u003c sections.length; x++) {\n        if (sections[x].data.map_name === mapName) {\n            //draw section on map\n            var sectionCords = JSON.parse(sections[x].data.coordinates);\n            var sectionShape = new createjs.Shape();\n            for (var y = 0; y \u003c sectionCords.length; y++) {\n                if (y === 0) {\n                    sectionShape.graphics.beginFill(sections[x].data.section_color);\n                    sectionShape.graphics.moveTo((sectionCords[y].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[y].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                } else {\n                    sectionShape.graphics.lineTo((sectionCords[y].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[y].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                }\n                if (y === sectionCords.length - 1) {\n                    sectionShape.graphics.lineTo((sectionCords[0].x * window.mapConfig.scale) + window.mapConfig.background_x, (sectionCords[0].y * window.mapConfig.scale) + window.mapConfig.background_y);\n                }\n            }\n            window.mapConfig.sections[sections[x].data.section_name] = sectionShape;\n            window.mapConfig.stage.addChild(sectionShape);\n            //add section to legend\n\n            \n        }\n    }\n    window.mapConfig.stage.update();\n}\n\nif (this.datasource) {\n    window.drawMap(this.datasource);\n    document.getElementById(\"selectAMapMessage\").className = \"hidden\";\n    document.getElementById(\"mapCanvas\").className = \"\";\n    document.getElementById(\"mapName\").className = \"\";\n} else {\n    document.getElementById(\"selectAMapMessage\").className = \"\";\n    document.getElementById(\"mapCanvas\").className = \"hidden\";\n    document.getElementById(\"mapName\").className = \"hidden\";\n}\n\nvar determineScale = function (originalWidth, originalHeight, stageWidth, stageHeight) {\n    var widthScale = stageWidth / originalWidth;\n    var heightScale = stageHeight / originalHeight;\n    return Math.min(widthScale, heightScale);\n}"
                             }
                         }
                     }
@@ -749,8 +820,10 @@
         }
     },
     "description": null,
-    "last_updated": "07 Mar 18 22:23 UTC",
+    "last_updated": "30 Mar 18 01:06 UTC",
     "name": "Asset Tracking",
+    "permissions": 0,
+    "plugins": [],
     "system_key": "8897a4a90bc2ec9aba92beebf045",
     "type": "custom_v2"
 }

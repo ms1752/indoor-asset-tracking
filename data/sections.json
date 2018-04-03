@@ -1,0 +1,81 @@
+{
+    "app_id": "8897a4a90bc2ec9aba92beebf045",
+    "collection_id": "f4f1deab0b80b29cf9acc5ad82e001",
+    "items": [
+        {
+            "coordinates": "[{\"x\":346.2641074121593,\"y\":453.7853107344633},{\"x\":349.80930515227226,\"y\":616.8644067796611},{\"x\":397.0786083537788,\"y\":615.6826741996234},{\"x\":392.3516780336282,\"y\":460.8757062146893}]",
+            "item_id": "0d597f55-4abc-4c82-bc19-23342041c2df",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(255,110,0,0.5)",
+            "section_name": "Kitchen"
+        },
+        {
+            "coordinates": "[{\"x\":158.36862718617056,\"y\":1119.1007532956687},{\"x\":158.36862718617056,\"y\":1152.1892655367233},{\"x\":186.73020910707453,\"y\":1152.1892655367233},{\"x\":184.36674394699918,\"y\":1122.6459510357815}]",
+            "item_id": "29bc9cf7-8c8b-4c8e-9f20-100abaab4d3c",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(206,0,0,0.5)",
+            "section_name": "Aaron's Desk"
+        },
+        {
+            "coordinates": "[{\"x\":445.5296441353231,\"y\":86.26647834274954},{\"x\":499.88934281705565,\"y\":646.4077212806027},{\"x\":1173.4769134385247,\"y\":653.4981167608287},{\"x\":1101.391226056227,\"y\":70.90395480225989}]",
+            "item_id": "8bf42f56-48f8-403c-8e02-c0db1cfe43c4",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(255,244,0,0.5)",
+            "section_name": "Test Section"
+        },
+        {
+            "coordinates": "[{\"x\":335.6285141918203,\"y\":966.6572504708098},{\"x\":337.99197935189557,\"y\":1010.3813559322034},{\"x\":373.44395675302553,\"y\":1008.0178907721281},{\"x\":369.8987590129126,\"y\":971.3841807909605}]",
+            "item_id": "932080a0-9d1a-4217-84c6-7ba26b5dea5d",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(0,69,228,0.5)",
+            "section_name": "Michael's Desk"
+        },
+        {
+            "coordinates": "[{\"x\":476.2546912163024,\"y\":939.4774011299436},{\"x\":477.43642379634,\"y\":1173.4604519774011},{\"x\":590.8827514799559,\"y\":1172.2787193973636},{\"x\":594.4279492200689,\"y\":950.1129943502825}]",
+            "item_id": "ab139c10-d557-467d-b354-004c265097fa",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(0,138,0,0.5)",
+            "section_name": "Conference Room"
+        },
+        {
+            "coordinates": "[{\"x\":145.21026151803045,\"y\":262.032967032967},{\"x\":232.55458386235279,\"y\":404.5421245421245},{\"x\":410.6910307487997,\"y\":282.7197802197802},{\"x\":404.9446937524626,\"y\":104.58333333333333},{\"x\":169.3448769026458,\"y\":86.19505494505493}]",
+            "item_id": "d5481311-e95f-46a0-93da-e55f515ec393",
+            "map_name": "clearblade_office_floor_2",
+            "section_color": "rgba(248,69,238,0.5)",
+            "section_name": "Hello World"
+        }
+    ],
+    "name": "sections",
+    "permissions": {
+        "Administrator": 15,
+        "Asset Administrator": 15,
+        "Asset Viewer": 1
+    },
+    "schema": [
+        {
+            "ColumnName": "item_id",
+            "ColumnType": "uuid",
+            "PK": true
+        },
+        {
+            "ColumnName": "section_name",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "coordinates",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "map_name",
+            "ColumnType": "string",
+            "PK": false
+        },
+        {
+            "ColumnName": "section_color",
+            "ColumnType": "string",
+            "PK": false
+        }
+    ]
+}
