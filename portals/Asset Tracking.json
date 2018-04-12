@@ -822,8 +822,6 @@
     "description": null,
     "last_updated": "30 Mar 18 01:06 UTC",
     "name": "Asset Tracking",
-    "permissions": 0,
-    "plugins": [],
     "system_key": "8897a4a90bc2ec9aba92beebf045",
     "type": "custom_v2"
 }
