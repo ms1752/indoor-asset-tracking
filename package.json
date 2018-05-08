@@ -29,5 +29,5 @@
     "protocols": [],
     "things": [],
     "version": "2.0.0",
-    "asset_types": ["Code Libraries", "Code Services", "Portals", "Collections", "Triggers", "Roles", "Timers", "Users", "Devices"]
+    "asset_types": ["System","Code Libraries", "Code Services", "Portals", "Collections", "Triggers", "Roles", "Timers", "Users", "Devices"]
 }
